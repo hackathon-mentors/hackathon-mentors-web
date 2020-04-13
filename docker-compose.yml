@@ -1,0 +1,29 @@
+version: '3.5'
+
+services:
+  db:
+    container_name: hackathonmentors_db
+    image: mysql:5.7
+    ports:
+      - '6033:3306'
+    env_file:
+      - ./secrets/db.env
+
+  web:
+    container_name: hackathonmentors_web
+    build: .
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/my_app_dir
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+    environment:
+      DJANGO_SECRET_KEY: /var/run/secrets/django_secret
+    secrets:
+      - django_secret
+
+secrets:
+  django_secret:
+    file: ./secrets/django_secret
