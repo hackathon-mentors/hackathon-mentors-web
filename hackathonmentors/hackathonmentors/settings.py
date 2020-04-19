@@ -46,6 +46,7 @@ INSTALLED_APPS = [
 
     # our app <3
     'hackathonmentors',
+    'hackathon',
     'user',
 ]
 
