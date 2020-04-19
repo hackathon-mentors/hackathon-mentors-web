@@ -9,7 +9,7 @@ https://github.com/pennersr/django-allauth/blob/master/allauth/account/views.py
 
 
 class HMLoginView(allauth.LoginView):
-    pass
+    template_name = 'user/login.html'
 
 
 class HMSignupView(allauth.SignupView):
@@ -17,45 +17,44 @@ class HMSignupView(allauth.SignupView):
 
 
 class HMConfirmEmailView(allauth.ConfirmEmailView):
-    pass
+    template_name = 'user/email_confirm.html'
 
 
 class HMEmailView(allauth.EmailView):
-    pass
+    template_name = 'user/email.html'
 
 
 class HMPasswordChangeView(allauth.PasswordChangeView):
-    pass
+    template_name = 'user/password_change.html'
 
 
 class HMPasswordSetView(allauth.PasswordSetView):
-    pass
+    template_name = 'user/password_set.html'
 
 
 class HMPasswordResetView(allauth.PasswordResetView):
-    pass
+    template_name = 'user/password_reset.html'
 
 
 class HMPasswordResetDoneView(allauth.PasswordResetDoneView):
-    pass
+    template_name = 'user/password_reset_done.html'
 
 
 class HMPasswordResetFromKeyView(allauth.PasswordResetFromKeyView):
-    pass
+    template_name = 'user/password_reset_from_key.html'
 
 
 class HMPasswordResetFromKeyDoneView(allauth.PasswordResetFromKeyDoneView):
-    pass
+    template_name = 'user/password_reset_from_key_done.html'
 
 
 class HMLogoutView(allauth.LogoutView):
-    pass
+    template_name = 'user/logout.html'
 
 
 class HMAccountInactiveView(allauth.AccountInactiveView):
-    pass
+    template_name = 'user/account_inactive.html'
 
 
 class HMEmailVerificationSentView(allauth.EmailVerificationSentView):
-    pass
-
+    template_name = 'user/verification_sent.html'
