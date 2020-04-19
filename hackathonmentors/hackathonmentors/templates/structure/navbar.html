@@ -3,7 +3,7 @@
 <div class="bg-light">
 <div class="container">
   <nav class="navbar navbar-expand-lg navbar-light">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="{% url 'index' %}">
       <img src="{% static 'img/logo.png' %}" style="height: 5rem;" alt="">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -13,10 +13,13 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item lead mx-3">
-          <a class="nav-link font-weight-bold" href="#">Mentors</a>
+          <a class="nav-link font-weight-bold" href="#mentors">Mentors</a>
         </li>
         <li class="nav-item lead mx-3">
-          <a class="nav-link font-weight-bold" href="#">Hackathons</a>
+          <a class="nav-link font-weight-bold" href="#hackathons">Hackathons</a>
+        </li>
+        <li class="nav-item lead mx-3">
+          <a class="nav-link font-weight-bold" href="#contact">Contact</a>
         </li>
         <li class="nav-item lead mx-3">
           <a class="nav-link font-weight-bold disabled" href="#" tabindex="-1" aria-disabled="true">Resources</a>

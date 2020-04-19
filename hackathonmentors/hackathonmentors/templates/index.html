@@ -9,7 +9,7 @@
 
 {% block body %}
 
-<section class="vh-100 text-white" id="splash-1">
+<section class="vh-100 text-white" id="splash">
   <div class="container h-100">
     <div class="row h-100">
       <div class="col-12 col-md-6 d-flex flex-column my-auto">
@@ -32,7 +32,7 @@
   </div>
 </section>
 
-<section class="vh-50 py-5" id="splash-2">
+<section class="vh-50 py-5" id="mentors">
   <div class="container h-100">
     <div class="row h-100">
       <div class="col d-flex flex-column my-auto">
@@ -45,7 +45,7 @@
           This includes: helping debug code, ideate project ideas, helping hackers acclimate to the community, and
           pitching their project.
         </p>
-        <a type="button" class="btn btn-lg btn-outline-success" href="#">
+        <a type="button" class="btn btn-lg btn-outline-success" href="#contact">
           Sign Your Hackathon Up Now!
         </a>
       </div>
@@ -56,7 +56,7 @@
   </div>
 </section>
 
-<section class="vh-50 py-5" id="splash-3">
+<section class="vh-50 py-5" id="hackathons">
   <div class="container h-100">
     <div class="row h-100">
       <div class="d-none d-md-block col-6 my-auto">
@@ -71,7 +71,7 @@
           mentors who are determined to give back. We are partnering with events which enable our mentors to make an
           impact and enjoy a weekend of hacking fun!
         </p>
-        <a type="button" class="btn btn-lg btn-outline-success" href="#">
+        <a type="button" class="btn btn-lg btn-outline-success" href="#contact">
           Sign Your Hackathon Up Now!
         </a>
       </div>
@@ -80,44 +80,46 @@
 </section>
 
 
-
-<div class="vh-100 bg-dark">
+<section class="vh-100 bg-dark" id="contact">
   <div class="container h-100">
     <div class="d-flex flex-row justify-content-center h-100">
       <div class="col-6 my-auto">
         <h2 class="text-white text-center mb-5">
           Sign up for updates
         </h2>
-        <form method="post">
+        <form action="https://gmail.us4.list-manage.com/subscribe/post?u=0df9eb9df8e9a6f54d3dc9c3a&amp;id=d574cb485f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+          {% csrf_token %}
+
           <div class="form-group">
             <label for="first_name" class="sr-only">First Name</label>
-            <input class="form-control border-radius-100px" id="first_name" type="text" placeholder="First Name" name="et_pb_signup_firstname">
+            <input class="form-control border-radius-100px" id="first_name" type="text" placeholder="First Name" name="FNAME">
           </div>
+
           <div class="form-group">
             <label for="last_name" class="sr-only">Last Name</label>
-            <input class="form-control border-radius-100px" id="last_name" type="text" placeholder="Last Name" name="et_pb_signup_lastname">
+            <input class="form-control border-radius-100px" id="last_name" type="text" placeholder="Last Name" name="LNAME">
           </div>
+
           <div class="form-group">
             <label for="email" class="sr-only">Email</label>
-            <input class="form-control border-radius-100px" id="email" type="text" placeholder="Email" name="et_pb_signup_email">
+            <input class="form-control border-radius-100px" id="email" type="text" placeholder="Email" name="EMAIL">
           </div>
 
           <button type="submit" class="btn btn-primary text-uppercase w-100 border-radius-100px">
             <span>Submit</span>
           </button>
 
-          <input type="hidden" value="mailchimp" name="et_pb_signup_provider">
-          <input type="hidden" value="d574cb485f" name="et_pb_signup_list_id">
-          <input type="hidden" value="Hackathon Mentors" name="et_pb_signup_account_name">
-          <input type="hidden" value="true" name="et_pb_signup_ip_address">
+          <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_0df9eb9df8e9a6f54d3dc9c3a_d574cb485f" tabindex="-1" value=""></div>
+
         </form>
+
         <p class="text-center small mt-3 text-light">
-        We promise we, don't send spam.
+        We promise, we won't send spam.
         </p>
 
       </div>
     </div>
   </div>
-</div>
+</section>
 
 {% endblock %}

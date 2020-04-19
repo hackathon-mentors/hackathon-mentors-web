@@ -6,8 +6,8 @@ from django.views.generic.base import RedirectView
 from hackathonmentors import views
 
 urlpatterns = [
-    path('', views.BaseView.as_view(template_name="index.html")),
-    path('code-of-conduct', views.BaseView.as_view(template_name="coc.html")),
+    path('', views.BaseView.as_view(template_name="index.html"), name="index"),
+    path('code-of-conduct', views.BaseView.as_view(template_name="coc.html"), name="coc"),
     path('user/', include('user.urls')),
 
     path('admin/', admin.site.urls),
