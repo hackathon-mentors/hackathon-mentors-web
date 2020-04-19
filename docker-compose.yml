@@ -17,7 +17,7 @@ services:
   web:
     container_name: hackathonmentors_web
     build: .
-    command: python manage.py runserver 0.0.0.0:8000
+    command: python hackathonmentors/manage.py runserver 0.0.0.0:8000
     volumes:
       - .:/my_app_dir
     ports:
