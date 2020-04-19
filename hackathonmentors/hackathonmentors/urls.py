@@ -7,6 +7,8 @@ from hackathonmentors import views
 
 urlpatterns = [
     path('', views.BaseView.as_view(template_name="index.html")),
+    path('code-of-conduct', views.BaseView.as_view(template_name="coc.html")),
+    path('user/', include('allauth.urls')),
 
     path('admin/', admin.site.urls),
     path('favicon.ico', RedirectView.as_view(url=staticfiles_storage.url('img/favicon.ico'))),
