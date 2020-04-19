@@ -6,5 +6,8 @@ Overrides Django's basic AbstractUser class if needed
 Reference: https://github.com/django/django/blob/master/django/contrib/auth/models.py
 """
 
+
 class CustomUser(AbstractUser):
-    pass
+
+    class Meta:
+        db_table = 'users'
