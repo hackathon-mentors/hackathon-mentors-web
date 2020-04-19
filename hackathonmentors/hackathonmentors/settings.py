@@ -80,7 +80,7 @@ DATABASES = {
         'NAME': os.environ.get('MYSQL_DATABASE', 'hackathonmentors'),
         'USER': os.environ.get('MYSQL_USER', 'hackathonmentors_user'),
         'PASSWORD': os.environ.get('MYSQL_PASSWORD', 'hackathonmentors_pass'),
-        'HOST': 'db',
+        'HOST': 'hackathonmentors_db',
         'PORT': 3306,
     }
 }
