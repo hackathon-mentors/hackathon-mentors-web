@@ -1,7 +1,123 @@
 {% extends 'structure/base.html' %}
 
+{% load static %}
+
+{% block head_css %}
+<link rel="stylesheet" href="{% static 'css/index.css' %}">
+{% endblock %}
+
+
 {% block body %}
 
-<h1> hello </h1>
+<section class="vh-100 text-white" id="splash-1">
+  <div class="container h-100">
+    <div class="row h-100">
+      <div class="col-12 col-md-6 d-flex flex-column my-auto">
+        <p class="text-uppercase lead font-weight-bold">
+          Welcome to Hackathon Mentors!
+        </p>
+        <h1 class="mb-5 font-weight-bold">
+          We Pair Qualified Mentors with Awesome Hackathons.
+        </h1>
+        <ul class="list-unstyled lead">
+          <li>Our aim is to create opportunities for former hackers to give back to the hackathon community.</li>
+          <li>Hackathon Mentors facilitates the process of getting qualified mentors to your event.</li>
+          <li>We also enable mentors to use their experience to nourish the hacker community.</li>
+        </ul>
+      </div>
+      <div class="d-none d-md-block col-6 my-auto">
+        <img src="{% static 'img/splash-1.webp' %}" class="img-fluid mb-5">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="vh-50 py-5" id="splash-2">
+  <div class="container h-100">
+    <div class="row h-100">
+      <div class="col d-flex flex-column my-auto">
+        <h2 class="h1 mb-5 font-weight-bold">
+          Mentors
+        </h2>
+        <p class="lead">
+          We are looking for mentors with hackathon experience and the desire to help others realize their full
+          potential in hackathon participation.<br>
+          This includes: helping debug code, ideate project ideas, helping hackers acclimate to the community, and
+          pitching their project.
+        </p>
+        <a type="button" class="btn btn-lg btn-outline-success" href="#">
+          Sign Your Hackathon Up Now!
+        </a>
+      </div>
+      <div class="d-none d-md-block col-6 my-auto">
+        <img src="{% static 'img/splash-2-1.webp' %}" class="img-fluid mb-5">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="vh-50 py-5" id="splash-3">
+  <div class="container h-100">
+    <div class="row h-100">
+      <div class="d-none d-md-block col-6 my-auto">
+        <img src="{% static 'img/splash-2-2.webp' %}" class="img-fluid mb-5">
+      </div>
+      <div class="col d-flex flex-column my-auto">
+        <h2 class="h1 mb-5 font-weight-bold">
+          Hackathons
+        </h2>
+        <p class="lead">
+          Register your hackathon with Hackathon Mentors to instantly gain access to highly qualified and motivated
+          mentors who are determined to give back. We are partnering with events which enable our mentors to make an
+          impact and enjoy a weekend of hacking fun!
+        </p>
+        <a type="button" class="btn btn-lg btn-outline-success" href="#">
+          Sign Your Hackathon Up Now!
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<div class="vh-100 bg-dark">
+  <div class="container h-100">
+    <div class="d-flex flex-row justify-content-center h-100">
+      <div class="col-6 my-auto">
+        <h2 class="text-white text-center mb-5">
+          Sign up for updates
+        </h2>
+        <form method="post">
+          <div class="form-group">
+            <label for="first_name" class="sr-only">First Name</label>
+            <input class="form-control border-radius-100px" id="first_name" type="text" placeholder="First Name" name="et_pb_signup_firstname">
+          </div>
+          <div class="form-group">
+            <label for="last_name" class="sr-only">Last Name</label>
+            <input class="form-control border-radius-100px" id="last_name" type="text" placeholder="Last Name" name="et_pb_signup_lastname">
+          </div>
+          <div class="form-group">
+            <label for="email" class="sr-only">Email</label>
+            <input class="form-control border-radius-100px" id="email" type="text" placeholder="Email" name="et_pb_signup_email">
+          </div>
+
+          <button type="submit" class="btn btn-primary text-uppercase w-100 border-radius-100px">
+            <span>Submit</span>
+          </button>
+
+          <input type="hidden" value="mailchimp" name="et_pb_signup_provider">
+          <input type="hidden" value="d574cb485f" name="et_pb_signup_list_id">
+          <input type="hidden" value="Hackathon Mentors" name="et_pb_signup_account_name">
+          <input type="hidden" value="true" name="et_pb_signup_ip_address">
+        </form>
+        <p class="text-center small mt-3 text-light">
+        We promise we, don't send spam.
+        </p>
+
+      </div>
+    </div>
+  </div>
+</div>
 
 {% endblock %}

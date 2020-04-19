@@ -1,3 +1,7 @@
 body {
   font-family: 'Alegreya Sans', sans-serif;
 }
+
+.border-radius-100px {
+  border-radius: 100px;
+}
