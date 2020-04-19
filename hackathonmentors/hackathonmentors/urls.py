@@ -4,7 +4,7 @@ from django.urls import include, path
 from hackathonmentors import views
 
 urlpatterns = [
-    # path('', 
+    path('', views.BaseView.as_view(template_name="index.html")),
 
     path('admin/', admin.site.urls),
 ]
