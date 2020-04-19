@@ -8,6 +8,9 @@ services:
       - '6033:3306'
     env_file:
       - ./secrets/db.env
+    volumes:
+      - ./data/init/sql:/docker-entrypoint-initdb.d
+      - ./data/mysql:/var/lib/mysql
 
   web:
     container_name: hackathonmentors_web
