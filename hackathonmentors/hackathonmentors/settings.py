@@ -44,6 +44,8 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
 
+    'crispy_forms',
+
     # our app <3
     'hackathonmentors',
     'hackathon',
@@ -80,6 +82,8 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'hackathonmentors.wsgi.application'
 
+# Frontend
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
