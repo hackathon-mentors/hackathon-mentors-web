@@ -16,3 +16,6 @@ RUN chown -R django /build
 
 COPY hackathonmentors /build
 COPY . /build/
+
+CMD python build/manage.py runserver 0.0.0.0:8000
+
