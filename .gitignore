@@ -172,3 +172,6 @@ secrets/
 data/mysql
 
 .DS_Store
+
+# collectstatic result
+/hackathonmentors/static
