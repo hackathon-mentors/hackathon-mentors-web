@@ -9,7 +9,10 @@ services:
       - .:/build
     ports:
       - "8000:8000"
+    env_file:
+      - ./secrets/db.env  
     environment:
+      DEBUG: 0
       DJANGO_SECRET_KEY: /var/run/secrets/django_secret
       EMAIL_SERVICE_NAME: mailchimp
       EMIAL_NEWLETTER_LIST_ID: d574cb485f

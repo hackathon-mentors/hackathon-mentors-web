@@ -1,6 +1,17 @@
 version: '3.5'
 
 services:
+  db:
+    container_name: hackathonmentors_db
+    image: mysql:5.7
+    ports:
+      - '6033:3306'
+    env_file:
+      - ./secrets/db.env
+    volumes:
+      - ./data/sql:/docker-entrypoint-initdb.d
+      - ./data/mysql:/var/lib/mysql
+
   web:
     container_name: hackathonmentors_web
     build: .
@@ -9,7 +20,12 @@ services:
       - .:/build
     ports:
       - "8000:8000"
+    depends_on:
+      - db
+    env_file:
+      - ./secrets/db.env  
     environment:
+      DEBUG: 1
       DJANGO_SECRET_KEY: /var/run/secrets/django_secret
       EMAIL_SERVICE_NAME: mailchimp
       EMIAL_NEWLETTER_LIST_ID: d574cb485f
