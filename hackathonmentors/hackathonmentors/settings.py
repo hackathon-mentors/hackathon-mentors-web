@@ -22,7 +22,6 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.environ.get("DEBUG", 1)
 DEBUG = False
 if int(os.environ.get("DEBUG", 0)) == 1:
     DEBUG = True
@@ -30,10 +29,6 @@ if int(os.environ.get("DEBUG", 0)) == 1:
     EMAIL_FILE_PATH = os.path.join(BASE_DIR, "sent_emails")
 
 ALLOWED_HOSTS = ['*']
-
-if DEBUG:
-    EMAIL_BACKEND = 'django.core.mail.backends.filebased.EmailBackend'
-    EMAIL_FILE_PATH = '/msg/sent_emails'
 
 # Application definition
 
@@ -162,7 +157,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_ROOT = '/build/hackathonmentors/static'
-STATIC_URL = '/static/' if not DEBUG else 'http://storage.googleapis.com/hm-store/static/'
+STATIC_URL = '/static/' if DEBUG else 'http://storage.googleapis.com/hm-store/static/'
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "hackathonmentors", "static"),
