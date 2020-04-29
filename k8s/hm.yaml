@@ -39,7 +39,7 @@ spec:
       containers:
       - name: django
         # Replace  with your project ID or use `make template`
-        image: gcr.io/hackathon-mentors/hm-web
+        image: gcr.io/hackathon-mentors/hm-web:1.0.0
         # This setting makes nodes pull the docker image every time before
         # starting the pod. This is useful when debugging, but should be turned
         # off in production.
