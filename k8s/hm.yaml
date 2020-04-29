@@ -46,7 +46,7 @@ spec:
         imagePullPolicy: Always
         env:
             - name: DEBUG
-              value: 0
+              value: "0"
             - name: DATABASE_HOST
               value: "127.0.0.1"
             - name: DATABASE_PORT
