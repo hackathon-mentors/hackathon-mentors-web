@@ -13,25 +13,11 @@ services:
       - ./data/mysql:/var/lib/mysql
 
   web:
-    container_name: hackathonmentors_web
-    build: .
-    command: python hackathonmentors/manage.py runserver 0.0.0.0:8000
-    volumes:
-      - .:/build
-    ports:
-      - "8000:8000"
     depends_on:
       - db
     env_file:
       - ./secrets/db.env
     environment:
       DEBUG: 1
-      DJANGO_SECRET_KEY: /var/run/secrets/django_secret
       EMAIL_SERVICE_NAME: mailchimp
       EMIAL_NEWLETTER_LIST_ID: d574cb485f
-    secrets:
-      - django_secret
-
-secrets:
-  django_secret:
-    file: ./secrets/django_secret
