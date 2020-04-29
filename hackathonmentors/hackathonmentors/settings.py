@@ -23,6 +23,11 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get("DEBUG", 1)
+DEBUG = False
+if int(os.environ.get("DEBUG", 0)) == 1:
+    DEBUG = True
+    EMAIL_BACKEND = "django.core.mail.backends.filebased.EmailBackend"
+    EMAIL_FILE_PATH = os.path.join(BASE_DIR, "sent_emails")
 
 ALLOWED_HOSTS = ['*']
 
