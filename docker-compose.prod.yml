@@ -1,12 +1,19 @@
 version: '3.5'
 
 services:
-  web:
-    container_name: hackathonmentors_web
-    build: .
-    command: python hackathonmentors/manage.py runserver 0.0.0.0:8000
+  cloudsql_proxy:
+    container_name: cloudsql_proxy
+    image: gcr.io/cloudsql-docker/gce-proxy:1.11
+    command: /cloud_sql_proxy --dir=/cloudsql -instances=hackathon-mentors:us-east1:hackathon-mentors-db=tcp:0.0.0.0:6603 -credential_file=/secrets/cloudsql/credentials.json
+    expose:
+      - 6603
     volumes:
-      - .:/build
+      - ./secrets/gcloud-service.json:/secrets/cloudsql/credentials.json
+    restart: always
+
+  web:
+    depends_on:
+    - cloudsql_proxy
     ports:
       - "8000:8000"
     env_file:
@@ -16,6 +23,8 @@ services:
       DJANGO_SECRET_KEY: /var/run/secrets/django_secret
       EMAIL_SERVICE_NAME: mailchimp
       EMIAL_NEWLETTER_LIST_ID: d574cb485f
+      DATABASE_HOST: cloudsql_proxy
+      DATABASE_PORT: 6603
     secrets:
       - django_secret
 
