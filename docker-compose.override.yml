@@ -23,7 +23,7 @@ services:
     depends_on:
       - db
     env_file:
-      - ./secrets/db.env  
+      - ./secrets/db.env
     environment:
       DEBUG: 1
       DJANGO_SECRET_KEY: /var/run/secrets/django_secret
