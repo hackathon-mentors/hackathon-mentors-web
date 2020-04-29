@@ -17,5 +17,4 @@ RUN chown -R django /build
 COPY hackathonmentors /build
 COPY . /build/
 
-CMD python build/manage.py runserver 0.0.0.0:8000
-
+CMD gunicorn -b :8000 hackathonmentors.wsgi
