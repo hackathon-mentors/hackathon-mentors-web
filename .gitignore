@@ -175,3 +175,6 @@ data/mysql
 
 # collectstatic result
 /hackathonmentors/static
+
+# asdf local python version
+.tool-versions
