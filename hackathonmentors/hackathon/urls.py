@@ -1,7 +1,7 @@
 from django.urls import path
 
-from hackathon.views import HackathonListView
+from hackathon import views
 
 urlpatterns = [
-    path('', HackathonListView.as_view(), name='hackathons_list'),
+    path('', views.HackathonListView.as_view(), name='hackathon_list'),
 ]

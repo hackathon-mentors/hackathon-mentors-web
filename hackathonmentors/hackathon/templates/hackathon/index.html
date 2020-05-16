@@ -1,0 +1,20 @@
+{% extends 'structure/base.html' %}
+
+{% block body %}
+
+
+<header class="jumbotron text-center">
+    <div class="container">
+      <h1>Hackathons</h1>
+      <p class="lead text-muted">Here is a list of hackathons.</p>
+      <p>
+        <a href="{% url 'hackathon_add' %}">Is your event not listed? Add now!</a>
+      </p>
+    </div>
+  </header>
+
+<section class="py-5">
+  {% include 'hackathon/_list.html' %}
+</section>
+
+{% endblock %}
