@@ -7,6 +7,9 @@ class Hackathon(models.Model):
     starts = models.DateTimeField()
     ends = models.DateTimeField()
 
+    slug = models.CharField(max_length=64, blank=True)
+    verified = models.BooleanField(default=False)
+
     added_by = models.ForeignKey('user.CustomUser', on_delete=models.SET(1))
     created = models.DateTimeField(auto_now_add=True)
     modified = models.DateTimeField(auto_now=True)
