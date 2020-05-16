@@ -13,6 +13,9 @@ class Hackathon(models.Model):
     added_by = models.ForeignKey('user.CustomUser', on_delete=models.SET(1))
     created = models.DateTimeField(auto_now_add=True)
     modified = models.DateTimeField(auto_now=True)
-    
+
+    def __str__(self):
+        return f"{self.name} ({self.location}), {self.starts} - {self.ends}"
+
     class Meta:
         db_table = 'hackathons'
