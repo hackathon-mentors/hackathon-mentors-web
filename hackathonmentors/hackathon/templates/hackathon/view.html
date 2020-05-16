@@ -1,0 +1,17 @@
+{% extends 'structure/base.html' %}
+
+{% block body %}
+
+<header class="jumbotron text-center">
+  <div class="container">
+    <h1>{{ hackathon.name }}</h1>
+    <h2>{{ hackathon.location }}</h2>
+    <p class="lead">{{ hackathon.starts|date }}</p>
+  </div>
+</header>
+
+<section class="py-5">
+
+</section>
+
+{% endblock %}
