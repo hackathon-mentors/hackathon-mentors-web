@@ -4,6 +4,9 @@ from . import views
 
 
 urlpatterns = [
+    path("", views.UserDashboardView.as_view(), name="user_dashboard"),
+
+    # allauth overrides
     path("signup/", views.HMSignupView.as_view(), name="account_signup"),
     path("login/", views.HMLoginView.as_view(), name="account_login"),
     path("logout/", views.HMLogoutView.as_view(), name="account_logout"),
