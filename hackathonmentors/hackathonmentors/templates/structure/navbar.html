@@ -1,31 +1,36 @@
 {% load static %}
-
-<div class="bg-light">
+<nav class="navbar navbar-expand-lg navbar-light">
 <div class="container">
-  <nav class="navbar navbar-expand-lg navbar-light">
-    <a class="navbar-brand" href="{% url 'index' %}">
-      <img src="{% static 'img/logo.png' %}" style="height: 5rem;" alt="">
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+  <a class="navbar-brand" href="{% url 'index' %}">
+    <img src="{% static 'img/logo.png' %}" style="max-width: 150px;" alt="">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item lead mx-3">
-          <a class="nav-link font-weight-bold" href="#mentors">Mentors</a>
-        </li>
-        <li class="nav-item lead mx-3">
-          <a class="nav-link font-weight-bold" href="#hackathons">Hackathons</a>
-        </li>
-        <li class="nav-item lead mx-3">
-          <a class="nav-link font-weight-bold" href="#contact">Contact</a>
-        </li>
-        <li class="nav-item lead mx-3">
-          <a class="nav-link font-weight-bold disabled" href="#" tabindex="-1" aria-disabled="true">Resources</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item lead mx-1">
+        <a class="nav-link font-weight-bold" href="#mentors">Mentors</a>
+      </li>
+      <li class="nav-item lead mx-1">
+        <a class="nav-link font-weight-bold" href="{% url 'hackathon_list' %}">Hackathons</a>
+      </li>
+      <li class="nav-item lead mx-1">
+        <a class="nav-link font-weight-bold disabled" href="#" tabindex="-1" aria-disabled="true">Resources</a>
+      </li>
+
+      {% if user.is_authenticated %}
+      <li class="nav-item lead mx-1">
+        <a class="nav-link font-weight-bold" href="{% url 'user_dashboard' %}">{{ user.username }} <span class="badge badge-info">1</span></a>
+      </li>
+      {% else %}
+      <li class="nav-item lead">
+        <a class="nav-link font-weight-bold" href="{% url 'account_login' %}">Log in</a>
+      </li>
+      {% endif %}
+
+    </ul>
+  </div>
 </div>
-</div>
+</nav>
