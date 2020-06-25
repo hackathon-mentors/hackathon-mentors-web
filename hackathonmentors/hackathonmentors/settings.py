@@ -53,6 +53,7 @@ INSTALLED_APPS = [
     'hackathonmentors',
     'hackathon',
     'user',
+    'mentor',
 ]
 
 MIDDLEWARE = [
@@ -117,7 +118,6 @@ AUTHENTICATION_BACKENDS = (
     # `allauth` specific authentication methods, such as login by e-mail
     'allauth.account.auth_backends.AuthenticationBackend',
 )
-
 
 
 # Password validation

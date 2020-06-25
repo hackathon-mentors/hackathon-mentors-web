@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="d-flex flex-row flex-wrap">
+    {% for mentor in mentors %}
+      <div class="col-sm-4">
+        <div class="card mb-4 shadow-sm">
+        <img class="card-img-top" src="//placehold.it/250x250">
+          <div class="card-body">
+            <div class="card-text">
+              <h4 class=""><a href="{% url 'mentor_view' %}">{{ mentor.name }}</a></h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    {% empty %}
+      No mentors yet.
+    {% endfor %}
+  </div>
+</div>
