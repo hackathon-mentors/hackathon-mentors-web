@@ -1,12 +1,9 @@
 from django.shortcuts import render
 from django.urls import reverse_lazy
-from django.views.generic.edit import CreateView
 from django.views.generic import ListView, DetailView
 
 from hackathonmentors.views import HackathonMentorsMixin
 from mentor.models import Mentor
-# Create your views here.
-
 
 class MentorListView(HackathonMentorsMixin, ListView):
     model = Mentor
@@ -19,7 +16,7 @@ class MentorListView(HackathonMentorsMixin, ListView):
         return context
 
 
-class MentorDetailView(HackathonMentorsMixin, DetailView):
+class MentorDetailsView(HackathonMentorsMixin, DetailView):
     model = Mentor
     template_name = "mentor/view.html"
     context_object_name = 'mentor'

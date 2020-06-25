@@ -1,0 +1,17 @@
+{% extends 'structure/base.html' %}
+
+{% block body %}
+
+
+<header class="jumbotron text-center">
+    <div class="container">
+      <h1>Hackathons</h1>
+      <p class="lead text-muted">Here is a list of mentors.</p>
+    </div>
+  </header>
+
+<section class="py-5">
+  {% include 'mentor/_list.html' %}
+</section>
+
+{% endblock %}
