@@ -12,7 +12,10 @@ Website for Hackathon Mentors
 
 1. Create `secrets` folder and place `db.env` and `django_secret` in there (get these files from [@hunj](https://github.com/hunj)).
 2. `docker-compose up -d` to start building.
-3. Visit [http://localhost:8000/](http://localhost:8000/)
+3. `docker-compose exec web bash` to go into the django image:
+  - `python hackathonmentors/manage.py migrate` to set up initial database
+  - `python hackathonmentors/manage.py createsuperuser` to create an admin user for your localhost.
+4. Visit [http://localhost:8000/](http://localhost:8000/)
 
 ## Deployment
 
