@@ -1,0 +1,19 @@
+{% extends 'structure/base.html' %}
+
+{% block body %}
+
+<header class="jumbotron text-center">
+  <div class="container">
+    <h1>{{ mentor.name }}</h1>
+  </div>
+</header>
+
+<section class="py-5">
+    <p>Location: {{ mentor.location }}</p>
+    <p>Github: {{ mentor.github }}</p>
+    <p>Position: {{ mentor.job_title }}</p>
+    <p>Skills: {{ mentor.skills }}</p>
+
+</section>
+
+{% endblock %}
