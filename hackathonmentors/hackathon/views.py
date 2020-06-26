@@ -31,6 +31,7 @@ class HackathonCreateView(HackathonMentorsMixin, CreateView):
     fields = [
         "name",
         "location",
+        "is_remote",
         "starts",
         "ends",
     ]
