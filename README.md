@@ -28,3 +28,4 @@ $ docker push hm-web:<version>  # to push up to docker hub
 $ # change version name in the k8s file from step 2 & save that file
 $ kubectl deploy -f hm.yaml
 ```
+
