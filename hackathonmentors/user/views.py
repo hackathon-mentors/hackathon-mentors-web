@@ -1,6 +1,12 @@
 from django.shortcuts import render
 
 from allauth.account import views as allauth
+from hackathonmentors.views import BaseView
+
+
+class UserDashboardView(BaseView):
+    template_name = "dashboard/home.html"
+
 
 """
 Overrides django-allauth's view implementations.

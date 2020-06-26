@@ -20,4 +20,4 @@ services:
     environment:
       DEBUG: 1
       EMAIL_SERVICE_NAME: mailchimp
-      EMIAL_NEWLETTER_LIST_ID: d574cb485f
+      EMAIL_NEWSLETTER_LIST_ID: d574cb485f

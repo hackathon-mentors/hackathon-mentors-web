@@ -10,10 +10,6 @@ RUN apt-get install -y nodejs
 COPY requirements.txt /build
 RUN pip install -r requirements.txt
 
-RUN groupadd -r django && useradd -r -g django django
-COPY . /build
-RUN chown -R django /build
-
 COPY hackathonmentors /build
 COPY . /build/
 
