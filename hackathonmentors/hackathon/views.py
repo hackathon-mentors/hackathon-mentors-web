@@ -19,6 +19,9 @@ class HackathonListView(HackathonMentorsMixin, ListView):
         context = super().get_context_data(**kwargs)
         return context
 
+    def get_queryset(self):
+        return super().get_queryset().filter(verified=True)
+
 
 class HackathonDetailsView(HackathonMentorsMixin, DetailView):
     model = Hackathon
