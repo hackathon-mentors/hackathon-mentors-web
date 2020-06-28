@@ -14,7 +14,7 @@ class Mentor(models.Model):
     is_active = models.BooleanField(default=False)
 
     def __str__(self):
-        return "{self.name} {self.location}, {self.github},  {self.job_title}, {self.skills}"
+        return f"{self.name} (Github@{self.github}, {self.location})"
 
     class Meta:
         db_table = 'mentors'
