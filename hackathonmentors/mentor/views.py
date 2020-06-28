@@ -1,4 +1,5 @@
-from django.shortcuts import render
+from django.http import Http404
+from django.shortcuts import redirect
 from django.urls import reverse_lazy
 from django.views.generic import ListView, DetailView
 
@@ -26,13 +27,17 @@ class MentorDetailsView(HackathonMentorsMixin, DetailView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         return context
-    
+
     def get_object(self, queryset=None):
         slug = self.kwargs.get(self.slug_url_kwarg)
         user = User.objects.filter(username=slug)
-        if user:
-            user = user.first()
-            mentor = Mentor.objects.filter(user_id=user.id)
-            print(mentor)
-        
-        return mentor
+        mentor = Mentor.objects.filter(user=user.first()) if user else None
+
+        return mentor.first() if mentor else None
+
+    def get(self, request, *args, **kwargs):
+        self.object = self.get_object()
+        if not self.object:
+            self.template_name = "mentor/not_found.html"
+        context = self.get_context_data(object=self.object)
+        return self.render_to_response(context)
