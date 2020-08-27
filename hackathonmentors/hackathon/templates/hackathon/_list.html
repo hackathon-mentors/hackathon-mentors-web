@@ -3,7 +3,7 @@
     {% for event in hackathons %}
       <div class="col-sm-4">
         <div class="card mb-4 shadow-sm">
-        <img class="card-img-top" src="//placehold.it/250x250">
+        <img class="card-img-top" src="{{ event.img }}">
           <div class="card-body">
             <div class="card-text">
               <h4 class=""><a href="{% url 'hackathon_view' event.slug %}">{{ event.name }}</a></h4>

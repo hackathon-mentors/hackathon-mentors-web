@@ -12,6 +12,7 @@ class Hackathon(models.Model):
     verified = models.BooleanField(default=False)
 
     link = models.CharField(max_length=128, blank=True, null=True)
+    img = models.CharField(max_length=256, blank=True, null=True)
 
     added_by = models.ForeignKey('user.CustomUser', on_delete=models.SET(1))
     modified = models.DateTimeField(auto_now=True)
