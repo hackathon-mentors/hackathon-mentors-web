@@ -1,0 +1,2552 @@
+[
+  {
+    "model": "hackathon.hackathon",
+    "pk": 1,
+    "fields": {
+      "name": "HackMTY",
+      "location": "Monterrey, MX",
+      "is_remote": false,
+      "starts": "2019-08-24T00:00:00Z",
+      "ends": "2019-08-25T00:00:00Z",
+      "slug": "hackmty",
+      "verified": true,
+      "link": "https://hackmty.com/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/200/thumb/NL_Monty_Fundidora33.jpg",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 2,
+    "fields": {
+      "name": "Citizen Hacks",
+      "location": "Toronto, ON",
+      "is_remote": false,
+      "starts": "2019-09-06T00:00:00Z",
+      "ends": "2019-09-08T00:00:00Z",
+      "slug": "citizen-hacks",
+      "verified": true,
+      "link": "https://www.citizenhacks.com/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/221/thumb/ezgif.com-gif-maker.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 3,
+    "fields": {
+      "name": "PennApps",
+      "location": "Philadelphia, PA",
+      "is_remote": false,
+      "starts": "2019-09-06T00:00:00Z",
+      "ends": "2019-09-08T00:00:00Z",
+      "slug": "pennapps",
+      "verified": true,
+      "link": "http://2019f.pennapps.com/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/262/thumb/backgroundImageSquare.jpg",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 4,
+    "fields": {
+      "name": " Hackathon de Futuras Tecnolog\u00edas ",
+      "location": "Torre\u00f3n, MX",
+      "is_remote": false,
+      "starts": "2019-09-07T00:00:00Z",
+      "ends": "2019-09-08T00:00:00Z",
+      "slug": "hackathon-de-futuras-tecnologias",
+      "verified": true,
+      "link": "http://www.festivalfuturas.tech",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/209/thumb/Festival_Header_sq.jpg",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 5,
+    "fields": {
+      "name": "Hack the North",
+      "location": "Waterloo, ON",
+      "is_remote": false,
+      "starts": "2019-09-13T00:00:00Z",
+      "ends": "2019-09-15T00:00:00Z",
+      "slug": "hack-the-north",
+      "verified": true,
+      "link": "https://hackthenorth.com",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/222/thumb/mlhcover.jpg",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 6,
+    "fields": {
+      "name": "HopHacks",
+      "location": "Baltimore, MD",
+      "is_remote": false,
+      "starts": "2019-09-13T00:00:00Z",
+      "ends": "2019-09-15T00:00:00Z",
+      "slug": "hophacks",
+      "verified": true,
+      "link": "https://hophacks.com/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/214/thumb/background__1_.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 7,
+    "fields": {
+      "name": "BigRed//Hacks",
+      "location": "Ithaca, NY",
+      "is_remote": false,
+      "starts": "2019-09-20T00:00:00Z",
+      "ends": "2019-09-22T00:00:00Z",
+      "slug": "bigred-hacks",
+      "verified": true,
+      "link": "https://www.bigredhacks.com",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/225/thumb/cornelltower.jpg",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 8,
+    "fields": {
+      "name": "HackRice",
+      "location": "Houston, TX",
+      "is_remote": false,
+      "starts": "2019-09-20T00:00:00Z",
+      "ends": "2019-09-21T00:00:00Z",
+      "slug": "hackrice",
+      "verified": true,
+      "link": "https://hack.rice.edu/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/210/thumb/hack-ricebg.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 9,
+    "fields": {
+      "name": "SBUHacks ",
+      "location": "Stony Brook, NY",
+      "is_remote": false,
+      "starts": "2019-09-20T00:00:00Z",
+      "ends": "2019-09-21T00:00:00Z",
+      "slug": "sbuhacks",
+      "verified": true,
+      "link": "http://sbuhacks.org/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/223/thumb/InstaCover.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 10,
+    "fields": {
+      "name": " ShellHacks",
+      "location": "Miami, FL",
+      "is_remote": false,
+      "starts": "2019-09-20T00:00:00Z",
+      "ends": "2019-09-22T00:00:00Z",
+      "slug": "shellhacks",
+      "verified": true,
+      "link": "https://shellhacks.net/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/202/thumb/__MLH_Banner__300_x_300_.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 11,
+    "fields": {
+      "name": "sunhacks",
+      "location": "Tempe, AZ",
+      "is_remote": false,
+      "starts": "2019-09-20T00:00:00Z",
+      "ends": "2019-09-22T00:00:00Z",
+      "slug": "sunhacks",
+      "verified": true,
+      "link": "https://sunhacks.io/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/201/thumb/sunhacksBG.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 12,
+    "fields": {
+      "name": "Kent Hack Enough",
+      "location": "Kent, OH",
+      "is_remote": false,
+      "starts": "2019-09-27T00:00:00Z",
+      "ends": "2019-09-29T00:00:00Z",
+      "slug": "kent-hack-enough",
+      "verified": true,
+      "link": "https://khe.io/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/215/thumb/KHEofficial.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 13,
+    "fields": {
+      "name": "MedHacks",
+      "location": "Baltimore, MD",
+      "is_remote": false,
+      "starts": "2019-09-27T00:00:00Z",
+      "ends": "2019-09-29T00:00:00Z",
+      "slug": "medhacks",
+      "verified": true,
+      "link": "https://medhacks.io/2019/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/212/thumb/medhacksbackground.jpg",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 14,
+    "fields": {
+      "name": "VolHacks",
+      "location": "Knoxville, TN",
+      "is_remote": false,
+      "starts": "2019-09-27T00:00:00Z",
+      "ends": "2019-09-29T00:00:00Z",
+      "slug": "volhacks",
+      "verified": true,
+      "link": "https://volhacks.org/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/218/thumb/mk1.JPG",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 15,
+    "fields": {
+      "name": "GirlHacks",
+      "location": "Newark, NJ",
+      "is_remote": false,
+      "starts": "2019-09-28T00:00:00Z",
+      "ends": "2019-09-29T00:00:00Z",
+      "slug": "girlhacks",
+      "verified": true,
+      "link": "http://girlhacks.tech/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/217/thumb/NJIT.jpg",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 16,
+    "fields": {
+      "name": "GrizzHacks 4",
+      "location": "Rochester, MI",
+      "is_remote": false,
+      "starts": "2019-09-28T00:00:00Z",
+      "ends": "2019-09-29T00:00:00Z",
+      "slug": "grizzhacks-4",
+      "verified": true,
+      "link": "http://grizzhacks.com/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/203/thumb/grizzbuilding.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 17,
+    "fields": {
+      "name": "hackNY",
+      "location": "New York City, NY",
+      "is_remote": false,
+      "starts": "2019-09-28T00:00:00Z",
+      "ends": "2019-09-29T00:00:00Z",
+      "slug": "hackny",
+      "verified": true,
+      "link": "https://hackny.org/hackathon/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/220/thumb/hackny_mlh_splash.jpg",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 18,
+    "fields": {
+      "name": "HackUMBC",
+      "location": "Baltimore, MD",
+      "is_remote": false,
+      "starts": "2019-09-28T00:00:00Z",
+      "ends": "2019-09-29T00:00:00Z",
+      "slug": "hackumbc",
+      "verified": true,
+      "link": "https://www.hackumbc.org/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/219/thumb/hackumbc300.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 19,
+    "fields": {
+      "name": "RamHacks",
+      "location": "Richmond, VA",
+      "is_remote": false,
+      "starts": "2019-09-28T00:00:00Z",
+      "ends": "2019-09-29T00:00:00Z",
+      "slug": "ramhacks",
+      "verified": true,
+      "link": "https://ramhacks.vcu.edu/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/224/thumb/RamHacksBackground_300x300_opt2.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 20,
+    "fields": {
+      "name": "HackTheU",
+      "location": "Salt Lake City, UT",
+      "is_remote": false,
+      "starts": "2019-10-05T00:00:00Z",
+      "ends": "2019-10-06T00:00:00Z",
+      "slug": "hacktheu",
+      "verified": true,
+      "link": "https://www.hacktheu.org/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/261/thumb/Event_Square_%281%29.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 21,
+    "fields": {
+      "name": "MHacks",
+      "location": "Ann Arbor, MI",
+      "is_remote": false,
+      "starts": "2019-10-11T00:00:00Z",
+      "ends": "2019-10-13T00:00:00Z",
+      "slug": "mhacks",
+      "verified": true,
+      "link": "https://mhacks.org/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/269/thumb/bg.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 22,
+    "fields": {
+      "name": "Polyhack",
+      "location": "Somerville, MA",
+      "is_remote": false,
+      "starts": "2019-10-11T00:00:00Z",
+      "ends": "2019-10-12T00:00:00Z",
+      "slug": "polyhack",
+      "verified": true,
+      "link": "http://www.tufts-polyhack.com/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/300/thumb/SEC.jpeg",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 23,
+    "fields": {
+      "name": "The Pitt Challenge",
+      "location": "Pittsburgh, PA",
+      "is_remote": false,
+      "starts": "2019-10-11T00:00:00Z",
+      "ends": "2019-10-12T00:00:00Z",
+      "slug": "the-pitt-challenge",
+      "verified": true,
+      "link": "http://pittchallenge.com/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/227/thumb/pitt-oak.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 24,
+    "fields": {
+      "name": "Dubhacks",
+      "location": "Seattle, WA",
+      "is_remote": false,
+      "starts": "2019-10-12T00:00:00Z",
+      "ends": "2019-10-13T00:00:00Z",
+      "slug": "dubhacks",
+      "verified": true,
+      "link": "https://dubhacks.co/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/286/thumb/dubhacks.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 25,
+    "fields": {
+      "name": "HackNC",
+      "location": "Chapel Hill, NC",
+      "is_remote": false,
+      "starts": "2019-10-12T00:00:00Z",
+      "ends": "2019-10-13T00:00:00Z",
+      "slug": "hacknc",
+      "verified": true,
+      "link": "https://hacknc.com/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/263/thumb/hacknc.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 26,
+    "fields": {
+      "name": "HackUIowa",
+      "location": "Iowa City, IA",
+      "is_remote": false,
+      "starts": "2019-10-12T00:00:00Z",
+      "ends": "2019-10-13T00:00:00Z",
+      "slug": "hackuiowa",
+      "verified": true,
+      "link": "https://hack.uiowa.edu/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/213/thumb/capitol.jpg",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 27,
+    "fields": {
+      "name": "HackFSU",
+      "location": "Tallahassee, FL",
+      "is_remote": false,
+      "starts": "2019-10-18T00:00:00Z",
+      "ends": "2019-10-20T00:00:00Z",
+      "slug": "hackfsu",
+      "verified": true,
+      "link": "https://hackfsu.com",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/281/thumb/Untitled_design_%281%29.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 28,
+    "fields": {
+      "name": "HackHarvard College",
+      "location": "Cambridge, MA",
+      "is_remote": false,
+      "starts": "2019-10-18T00:00:00Z",
+      "ends": "2019-10-20T00:00:00Z",
+      "slug": "hackharvard-college",
+      "verified": true,
+      "link": "https://hackharvard.io/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/280/thumb/Harvard_Campus.jpg",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 29,
+    "fields": {
+      "name": "HackUMass VII",
+      "location": "Amherst, MA",
+      "is_remote": false,
+      "starts": "2019-10-18T00:00:00Z",
+      "ends": "2019-10-20T00:00:00Z",
+      "slug": "hackumass-vii",
+      "verified": true,
+      "link": "https://hackumass.com/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/272/thumb/linkedin_banner.jpg",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 30,
+    "fields": {
+      "name": "HackRU",
+      "location": "New Brunswick, NJ",
+      "is_remote": false,
+      "starts": "2019-10-19T00:00:00Z",
+      "ends": "2019-10-20T00:00:00Z",
+      "slug": "hackru",
+      "verified": true,
+      "link": "https://hackru.org/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/275/thumb/mlh-bg_%281%29.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 31,
+    "fields": {
+      "name": "health++",
+      "location": "Stanford, CA",
+      "is_remote": false,
+      "starts": "2019-10-19T00:00:00Z",
+      "ends": "2019-10-20T00:00:00Z",
+      "slug": "health",
+      "verified": true,
+      "link": "http://healthplusplus.stanford.edu/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/271/thumb/stanfordHospital.jpg",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 32,
+    "fields": {
+      "name": "MadHacks",
+      "location": "Madison, WI",
+      "is_remote": false,
+      "starts": "2019-10-19T00:00:00Z",
+      "ends": "2019-10-20T00:00:00Z",
+      "slug": "madhacks",
+      "verified": true,
+      "link": "https://www.madhacks.io/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/260/thumb/mad1.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 33,
+    "fields": {
+      "name": "TAMU Datathon",
+      "location": "College Station, TX",
+      "is_remote": false,
+      "starts": "2019-10-19T00:00:00Z",
+      "ends": "2019-10-20T00:00:00Z",
+      "slug": "tamu-datathon",
+      "verified": true,
+      "link": "https://tamudatathon.com/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/216/thumb/SpaceBack_vertical_notext.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 34,
+    "fields": {
+      "name": "Cal Hacks",
+      "location": "Berkeley, CA",
+      "is_remote": false,
+      "starts": "2019-10-25T00:00:00Z",
+      "ends": "2019-10-27T00:00:00Z",
+      "slug": "cal-hacks",
+      "verified": true,
+      "link": "https://calhacks.io/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/290/thumb/Artboard_9_4x.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 35,
+    "fields": {
+      "name": "DandyHacks",
+      "location": "Rochester, NY",
+      "is_remote": false,
+      "starts": "2019-10-25T00:00:00Z",
+      "ends": "2019-10-27T00:00:00Z",
+      "slug": "dandyhacks",
+      "verified": true,
+      "link": "http://rochack.org/dandyhacks/hackathon.html",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/276/thumb/backgroundPicture.jpg",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 36,
+    "fields": {
+      "name": "HackGT",
+      "location": "Atlanta, GA",
+      "is_remote": false,
+      "starts": "2019-10-25T00:00:00Z",
+      "ends": "2019-10-27T00:00:00Z",
+      "slug": "hackgt",
+      "verified": true,
+      "link": "https://2019.hack.gt/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/226/thumb/MLH_800x800.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 37,
+    "fields": {
+      "name": "MXHACKS VI",
+      "location": "Mexico City, MX",
+      "is_remote": false,
+      "starts": "2019-10-25T00:00:00Z",
+      "ends": "2019-10-27T00:00:00Z",
+      "slug": "mxhacks-vi",
+      "verified": true,
+      "link": "https://mxhacks.io/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/264/thumb/fondo.jpg",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 38,
+    "fields": {
+      "name": "SD Hacks",
+      "location": "La Jolla, CA",
+      "is_remote": false,
+      "starts": "2019-10-25T00:00:00Z",
+      "ends": "2019-10-27T00:00:00Z",
+      "slug": "sd-hacks",
+      "verified": true,
+      "link": "https://www.sdhacks.io",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/274/thumb/geisel_%281%29.jpg",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 39,
+    "fields": {
+      "name": "TechTogether New York",
+      "location": "Queens, NY",
+      "is_remote": false,
+      "starts": "2019-10-25T00:00:00Z",
+      "ends": "2019-10-27T00:00:00Z",
+      "slug": "techtogether-new-york",
+      "verified": true,
+      "link": "https://newyork.techtogether.io/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/306/thumb/Untitled_design_%285%29.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 40,
+    "fields": {
+      "name": "YHack",
+      "location": "New Haven, CT",
+      "is_remote": false,
+      "starts": "2019-10-25T00:00:00Z",
+      "ends": "2019-10-27T00:00:00Z",
+      "slug": "yhack",
+      "verified": true,
+      "link": "https://www.yhack.org/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/265/thumb/newhaven.jpeg",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 41,
+    "fields": {
+      "name": "HackGSU",
+      "location": "Atlanta, GA",
+      "is_remote": false,
+      "starts": "2019-11-01T00:00:00Z",
+      "ends": "2019-11-03T00:00:00Z",
+      "slug": "hackgsu",
+      "verified": true,
+      "link": "http://hackgsu.com",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/305/thumb/aldr.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 42,
+    "fields": {
+      "name": "SquirrelHacks",
+      "location": "Ames, IA",
+      "is_remote": false,
+      "starts": "2019-11-01T00:00:00Z",
+      "ends": "2019-11-03T00:00:00Z",
+      "slug": "squirrelhacks",
+      "verified": true,
+      "link": "https://hackisu.stuorg.iastate.edu/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/304/thumb/MLH_Backdrop.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 43,
+    "fields": {
+      "name": "VandyHacks",
+      "location": "Nashville, TN",
+      "is_remote": false,
+      "starts": "2019-11-01T00:00:00Z",
+      "ends": "2019-11-03T00:00:00Z",
+      "slug": "vandyhacks",
+      "verified": true,
+      "link": "https://vandyhacks.org/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/342/thumb/pattern.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 44,
+    "fields": {
+      "name": "Code for Good",
+      "location": "Durham, NC",
+      "is_remote": false,
+      "starts": "2019-11-02T00:00:00Z",
+      "ends": "2019-11-03T00:00:00Z",
+      "slug": "code-for-good",
+      "verified": true,
+      "link": "https://hackduke.org/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/283/thumb/duke-image.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 45,
+    "fields": {
+      "name": "HackPSU",
+      "location": "University Park, PA",
+      "is_remote": false,
+      "starts": "2019-11-02T00:00:00Z",
+      "ends": "2019-11-03T00:00:00Z",
+      "slug": "hackpsu",
+      "verified": true,
+      "link": "https://hackpsu.org/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/344/thumb/HackPSUBackground.jpeg",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 46,
+    "fields": {
+      "name": "HackRPI",
+      "location": "Troy, NY",
+      "is_remote": false,
+      "starts": "2019-11-02T00:00:00Z",
+      "ends": "2019-11-03T00:00:00Z",
+      "slug": "hackrpi",
+      "verified": true,
+      "link": "https://hackrpi.com/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/282/thumb/rpi-lawn.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 47,
+    "fields": {
+      "name": "HackTX",
+      "location": "Austin, TX",
+      "is_remote": false,
+      "starts": "2019-11-02T00:00:00Z",
+      "ends": "2019-11-03T00:00:00Z",
+      "slug": "hacktx",
+      "verified": true,
+      "link": "https://hacktx.com/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/348/thumb/MLH_Cover.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 48,
+    "fields": {
+      "name": "HealthHacks 2019",
+      "location": "Richmond, VA",
+      "is_remote": false,
+      "starts": "2019-11-02T00:00:00Z",
+      "ends": "2019-11-03T00:00:00Z",
+      "slug": "healthhacks-2019",
+      "verified": true,
+      "link": "https://healthhacks.vcu.edu/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/340/thumb/hh1.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 49,
+    "fields": {
+      "name": "UB Hacking",
+      "location": "Buffalo, NY",
+      "is_remote": false,
+      "starts": "2019-11-02T00:00:00Z",
+      "ends": "2019-11-03T00:00:00Z",
+      "slug": "ub-hacking",
+      "verified": true,
+      "link": "https://www.ubhacking.com/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/341/thumb/MLH_%281%29.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 50,
+    "fields": {
+      "name": "WHACK",
+      "location": "Wellesley Hills, MA",
+      "is_remote": false,
+      "starts": "2019-11-02T00:00:00Z",
+      "ends": "2019-11-03T00:00:00Z",
+      "slug": "whack",
+      "verified": true,
+      "link": "https://wellesleyhacks.org",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/301/thumb/BackGround_%281%29.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 51,
+    "fields": {
+      "name": "Hack KState",
+      "location": "Manhattan, KS",
+      "is_remote": false,
+      "starts": "2019-11-08T00:00:00Z",
+      "ends": "2019-11-10T00:00:00Z",
+      "slug": "hack-kstate",
+      "verified": true,
+      "link": "https://hackkstate.tech/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/291/thumb/background_%282%29.jpg",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 52,
+    "fields": {
+      "name": "HackPrinceton Fall 2019",
+      "location": "Princeton, NJ",
+      "is_remote": false,
+      "starts": "2019-11-08T00:00:00Z",
+      "ends": "2019-11-10T00:00:00Z",
+      "slug": "hackprinceton-fall-2019",
+      "verified": true,
+      "link": "https://www.hackprinceton.com/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/288/thumb/illustration.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 53,
+    "fields": {
+      "name": "TigerHacks",
+      "location": "Columbia, MO",
+      "is_remote": false,
+      "starts": "2019-11-08T00:00:00Z",
+      "ends": "2019-11-10T00:00:00Z",
+      "slug": "tigerhacks",
+      "verified": true,
+      "link": "https://tigerhacks.com/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/346/thumb/3580707652_2dce73bc27_z.jpg",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 54,
+    "fields": {
+      "name": "HackNJIT",
+      "location": "Newark, NJ",
+      "is_remote": false,
+      "starts": "2019-11-09T00:00:00Z",
+      "ends": "2019-11-10T00:00:00Z",
+      "slug": "hacknjit",
+      "verified": true,
+      "link": "http://www.hacknjit.org/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/279/thumb/pizzanjit.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 55,
+    "fields": {
+      "name": "HackUTD VI",
+      "location": "Richardson, TX",
+      "is_remote": false,
+      "starts": "2019-11-09T00:00:00Z",
+      "ends": "2019-11-10T00:00:00Z",
+      "slug": "hackutd-vi",
+      "verified": true,
+      "link": "http://www.hackutd.co/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/204/thumb/mlh-hackutd-VI-splash-bgcolorfix.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 56,
+    "fields": {
+      "name": "Technica",
+      "location": "College Park, MD",
+      "is_remote": false,
+      "starts": "2019-11-09T00:00:00Z",
+      "ends": "2019-11-10T00:00:00Z",
+      "slug": "technica",
+      "verified": true,
+      "link": "https://gotechnica.org/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/270/thumb/technica_image_for_mlh_event_page.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 57,
+    "fields": {
+      "name": "TeenHacks LI",
+      "location": "Old Westbury, NY",
+      "is_remote": false,
+      "starts": "2019-11-09T00:00:00Z",
+      "ends": "2019-11-10T00:00:00Z",
+      "slug": "teenhacks-li",
+      "verified": true,
+      "link": "https://teenhacksli.com",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/307/thumb/IMG_7632_copy.jpg",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 58,
+    "fields": {
+      "name": "Lehman Hackathon (NSBESHPE)   ",
+      "location": "Bronx, NY",
+      "is_remote": false,
+      "starts": "2019-11-15T00:00:00Z",
+      "ends": "2019-11-16T00:00:00Z",
+      "slug": "lehman-hackathon-nsbeshpe",
+      "verified": true,
+      "link": "https://nshacks.com/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/284/thumb/lehman-bg.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 59,
+    "fields": {
+      "name": " BostonHacks",
+      "location": "Boston, MA",
+      "is_remote": false,
+      "starts": "2019-11-16T00:00:00Z",
+      "ends": "2019-11-17T00:00:00Z",
+      "slug": "bostonhacks",
+      "verified": true,
+      "link": "https://www.bostonhacks.io/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/205/thumb/BostonHacks_EventBackground_%282%29.jpg",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 60,
+    "fields": {
+      "name": "Hack Western",
+      "location": "London, ON",
+      "is_remote": false,
+      "starts": "2019-11-22T00:00:00Z",
+      "ends": "2019-11-24T00:00:00Z",
+      "slug": "hack-western",
+      "verified": true,
+      "link": "https://hackwestern.com/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/289/thumb/MLH_Square_Background.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 61,
+    "fields": {
+      "name": "SB Hacks VI",
+      "location": "Santa Barbara, CA",
+      "is_remote": false,
+      "starts": "2020-01-10T00:00:00Z",
+      "ends": "2020-01-12T00:00:00Z",
+      "slug": "sb-hacks-vi",
+      "verified": true,
+      "link": "https://www.sbhacks.com/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/394/thumb/sbhacks.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 62,
+    "fields": {
+      "name": "BullyHack",
+      "location": "Starkville, MS",
+      "is_remote": false,
+      "starts": "2020-01-11T00:00:00Z",
+      "ends": "2020-01-12T00:00:00Z",
+      "slug": "bullyhack",
+      "verified": true,
+      "link": "http://www.bullyhack.com/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/444/thumb/300x300.jpg",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 63,
+    "fields": {
+      "name": "cuHacking",
+      "location": "Ottawa, ON",
+      "is_remote": false,
+      "starts": "2020-01-11T00:00:00Z",
+      "ends": "2020-01-12T00:00:00Z",
+      "slug": "cuhacking",
+      "verified": true,
+      "link": "https://cuhacking.com/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/400/thumb/background.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 64,
+    "fields": {
+      "name": "nwHacks",
+      "location": "Vancouver, BC",
+      "is_remote": false,
+      "starts": "2020-01-11T00:00:00Z",
+      "ends": "2020-01-12T00:00:00Z",
+      "slug": "nwhacks",
+      "verified": true,
+      "link": "https://www.nwhacks.io/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/396/thumb/Untitled.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 65,
+    "fields": {
+      "name": "SheHacks",
+      "location": "London, ON",
+      "is_remote": false,
+      "starts": "2020-01-11T00:00:00Z",
+      "ends": "2020-01-12T00:00:00Z",
+      "slug": "shehacks",
+      "verified": true,
+      "link": "https://shehacks.ca/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/387/thumb/shehacks4_testing-02.jpg",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 66,
+    "fields": {
+      "name": "CruzHacks",
+      "location": "Santa Cruz, CA",
+      "is_remote": false,
+      "starts": "2020-01-17T00:00:00Z",
+      "ends": "2020-01-19T00:00:00Z",
+      "slug": "cruzhacks",
+      "verified": true,
+      "link": "https://www.cruzhacks.com",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/402/thumb/Group_2__1_.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 67,
+    "fields": {
+      "name": "Hack Arizona",
+      "location": "Tucson, AZ",
+      "is_remote": false,
+      "starts": "2020-01-17T00:00:00Z",
+      "ends": "2020-01-19T00:00:00Z",
+      "slug": "hack-arizona",
+      "verified": true,
+      "link": "http://hackaz.io",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/207/thumb/Canyon_Background.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 68,
+    "fields": {
+      "name": "UofTHacks",
+      "location": "Toronto, ON",
+      "is_remote": false,
+      "starts": "2020-01-17T00:00:00Z",
+      "ends": "2020-01-19T00:00:00Z",
+      "slug": "uofthacks",
+      "verified": true,
+      "link": "https://uofthacks.com/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/445/thumb/110D8541-ED74-4941-9521-03F6625E63CF_%283%29.jpeg",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 69,
+    "fields": {
+      "name": "Womxn/Hacks\t",
+      "location": "Santa Barbara, CA",
+      "is_remote": false,
+      "starts": "2020-01-17T00:00:00Z",
+      "ends": "2020-01-19T00:00:00Z",
+      "slug": "womxn-hacks",
+      "verified": true,
+      "link": "https://www.womxnhacks.com/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/454/thumb/80065724_1056241864733071_5682352701678026752_n.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 70,
+    "fields": {
+      "name": "BCHacks",
+      "location": "Kelowna, BC",
+      "is_remote": false,
+      "starts": "2020-01-18T00:00:00Z",
+      "ends": "2020-01-19T00:00:00Z",
+      "slug": "bchacks",
+      "verified": true,
+      "link": "https://bchacks.com/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/392/thumb/bchacks-bg.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 71,
+    "fields": {
+      "name": "HackDavis",
+      "location": "Davis, CA",
+      "is_remote": false,
+      "starts": "2020-01-18T00:00:00Z",
+      "ends": "2020-01-19T00:00:00Z",
+      "slug": "hackdavis",
+      "verified": true,
+      "link": "https://hackdavis.io/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/399/thumb/Background.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 72,
+    "fields": {
+      "name": "HackED  ",
+      "location": "Edmonton, AB",
+      "is_remote": false,
+      "starts": "2020-01-18T00:00:00Z",
+      "ends": "2020-01-19T00:00:00Z",
+      "slug": "hacked",
+      "verified": true,
+      "link": "https://hacked.compeclub.com/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/409/thumb/HackEDMLHSquareBG.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 73,
+    "fields": {
+      "name": "HackFRee 2020",
+      "location": "Manalapan, NJ",
+      "is_remote": false,
+      "starts": "2020-01-18T00:00:00Z",
+      "ends": "2020-01-19T00:00:00Z",
+      "slug": "hackfree-2020",
+      "verified": true,
+      "link": "http://www.hackfree.info/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/406/thumb/School_Picture.jpg",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 74,
+    "fields": {
+      "name": "Rose Hack",
+      "location": "Riverside, CA",
+      "is_remote": false,
+      "starts": "2020-01-18T00:00:00Z",
+      "ends": "2020-01-19T00:00:00Z",
+      "slug": "rose-hack",
+      "verified": true,
+      "link": "https://rosehack.com/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/386/thumb/mlh_rose_hack_bg-01.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 75,
+    "fields": {
+      "name": "StarterHacks",
+      "location": "Waterloo, CA",
+      "is_remote": false,
+      "starts": "2020-01-18T00:00:00Z",
+      "ends": "2020-01-19T00:00:00Z",
+      "slug": "starterhacks",
+      "verified": true,
+      "link": "https://starterhacks.ca",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/403/thumb/Frame_6__5_.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 76,
+    "fields": {
+      "name": "BoilerMake",
+      "location": "West Lafayette, IN",
+      "is_remote": false,
+      "starts": "2020-01-24T00:00:00Z",
+      "ends": "2020-01-26T00:00:00Z",
+      "slug": "boilermake",
+      "verified": true,
+      "link": "https://boilermake.org/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/352/thumb/Background_%282%29.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 77,
+    "fields": {
+      "name": "ConUHacks",
+      "location": "Montreal, QC",
+      "is_remote": false,
+      "starts": "2020-01-25T00:00:00Z",
+      "ends": "2020-01-26T00:00:00Z",
+      "slug": "conuhacks",
+      "verified": true,
+      "link": "https://conuhacks.io/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/350/thumb/Untitled.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 78,
+    "fields": {
+      "name": "CUhackit",
+      "location": "Clemson, SC",
+      "is_remote": false,
+      "starts": "2020-01-25T00:00:00Z",
+      "ends": "2020-01-26T00:00:00Z",
+      "slug": "cuhackit",
+      "verified": true,
+      "link": "https://cuhack.it/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/349/thumb/CUhackit_MLH_site.PNG",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 79,
+    "fields": {
+      "name": "DeltaHacks",
+      "location": "Hamilton, ON",
+      "is_remote": false,
+      "starts": "2020-01-25T00:00:00Z",
+      "ends": "2020-01-26T00:00:00Z",
+      "slug": "deltahacks",
+      "verified": true,
+      "link": "https://www.deltahacks.com/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/388/thumb/MLH_500x.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 80,
+    "fields": {
+      "name": "MinneHack 2020",
+      "location": "Minneapolis, MN",
+      "is_remote": false,
+      "starts": "2020-01-25T00:00:00Z",
+      "ends": "2020-01-26T00:00:00Z",
+      "slug": "minnehack-2020",
+      "verified": true,
+      "link": "https://minnehack.io",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/397/thumb/u_of_m_arial_square.jpg",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 81,
+    "fields": {
+      "name": "PixelHacks IV",
+      "location": "San Jose, CA",
+      "is_remote": false,
+      "starts": "2020-01-25T00:00:00Z",
+      "ends": "2020-01-26T00:00:00Z",
+      "slug": "pixelhacks-iv",
+      "verified": true,
+      "link": "https://www.pixelhacks.com/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/446/thumb/IMG_7733.jpg",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 82,
+    "fields": {
+      "name": "QWER Hacks",
+      "location": "Los Angeles, CA",
+      "is_remote": false,
+      "starts": "2020-01-25T00:00:00Z",
+      "ends": "2020-01-26T00:00:00Z",
+      "slug": "qwer-hacks",
+      "verified": true,
+      "link": "https://qwerhacks.github.io/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/395/thumb/qwerBG.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 83,
+    "fields": {
+      "name": "TAMUhack",
+      "location": "College Station, TX",
+      "is_remote": false,
+      "starts": "2020-01-25T00:00:00Z",
+      "ends": "2020-01-26T00:00:00Z",
+      "slug": "tamuhack",
+      "verified": true,
+      "link": "https://tamuhack.com/th",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/404/thumb/th20-logo-bg_%281%29.jpg",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 84,
+    "fields": {
+      "name": "Ellehacks",
+      "location": "Toronto, ON",
+      "is_remote": false,
+      "starts": "2020-01-31T00:00:00Z",
+      "ends": "2020-02-02T00:00:00Z",
+      "slug": "ellehacks",
+      "verified": true,
+      "link": "https://ellehacks.com/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/448/thumb/website-image-cropped.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 85,
+    "fields": {
+      "name": "HackSC",
+      "location": "Los Angeles, CA",
+      "is_remote": false,
+      "starts": "2020-01-31T00:00:00Z",
+      "ends": "2020-02-02T00:00:00Z",
+      "slug": "hacksc",
+      "verified": true,
+      "link": "https://hacksc.com/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/385/thumb/MLH_Background.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 86,
+    "fields": {
+      "name": "Hoya Hacks",
+      "location": "Washington, DC",
+      "is_remote": false,
+      "starts": "2020-01-31T00:00:00Z",
+      "ends": "2020-02-02T00:00:00Z",
+      "slug": "hoya-hacks",
+      "verified": true,
+      "link": "http://hoyahacks.georgetown.domains/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/393/thumb/hoya-hacks-bg.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 87,
+    "fields": {
+      "name": "QHacks",
+      "location": "Kingston, ON",
+      "is_remote": false,
+      "starts": "2020-01-31T00:00:00Z",
+      "ends": "2020-02-02T00:00:00Z",
+      "slug": "qhacks",
+      "verified": true,
+      "link": "https://QHacks.io",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/453/thumb/qhacks2020_mlh_event_background.jpg",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 88,
+    "fields": {
+      "name": "SwampHacks",
+      "location": "Gainesville, FL",
+      "is_remote": false,
+      "starts": "2020-01-31T00:00:00Z",
+      "ends": "2020-02-02T00:00:00Z",
+      "slug": "swamphacks",
+      "verified": true,
+      "link": "https://2020.swamphacks.com/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/398/thumb/SM_Rockclimbing.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 89,
+    "fields": {
+      "name": "TechTogether Boston",
+      "location": "Boston, MA",
+      "is_remote": false,
+      "starts": "2020-01-31T00:00:00Z",
+      "ends": "2020-02-02T00:00:00Z",
+      "slug": "techtogether-boston",
+      "verified": true,
+      "link": "https://boston.techtogether.io",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/405/thumb/Promotional.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 90,
+    "fields": {
+      "name": "MakeHarvard",
+      "location": "Cambridge, MA",
+      "is_remote": false,
+      "starts": "2020-02-01T00:00:00Z",
+      "ends": "2020-02-02T00:00:00Z",
+      "slug": "makeharvard",
+      "verified": true,
+      "link": "https://www.makeharvard.io/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/389/thumb/picks__3_of_10_.jpg",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 91,
+    "fields": {
+      "name": "McHacks",
+      "location": "Montreal, QC",
+      "is_remote": false,
+      "starts": "2020-02-01T00:00:00Z",
+      "ends": "2020-02-02T00:00:00Z",
+      "slug": "mchacks",
+      "verified": true,
+      "link": "https://mchacks.ca/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/476/thumb/apps-open_%281%29.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 92,
+    "fields": {
+      "name": "HackCWRU 2020",
+      "location": "Cleveland, OH",
+      "is_remote": false,
+      "starts": "2020-02-07T00:00:00Z",
+      "ends": "2020-02-09T00:00:00Z",
+      "slug": "hackcwru-2020",
+      "verified": true,
+      "link": "https://hackcwru.info/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/481/thumb/box-cwru.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 93,
+    "fields": {
+      "name": "HackKU",
+      "location": "Lawrence, KS",
+      "is_remote": false,
+      "starts": "2020-02-07T00:00:00Z",
+      "ends": "2020-02-09T00:00:00Z",
+      "slug": "hackku",
+      "verified": true,
+      "link": "https://hackku.org/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/451/thumb/hackku20_square_%281%29.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 94,
+    "fields": {
+      "name": "UGAHacks 5",
+      "location": "Athens, GA",
+      "is_remote": false,
+      "starts": "2020-02-07T00:00:00Z",
+      "ends": "2020-02-09T00:00:00Z",
+      "slug": "ugahacks-5",
+      "verified": true,
+      "link": "https://ugahacks.com/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/401/thumb/ugahacks-Background.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 95,
+    "fields": {
+      "name": "uOttaHack",
+      "location": "Ottawa, ON",
+      "is_remote": false,
+      "starts": "2020-02-07T00:00:00Z",
+      "ends": "2020-02-09T00:00:00Z",
+      "slug": "uottahack",
+      "verified": true,
+      "link": "https://2020.uottahack.ca/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/477/thumb/mlh_square.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 96,
+    "fields": {
+      "name": "AuburnHacks",
+      "location": "Auburn, AL",
+      "is_remote": false,
+      "starts": "2020-02-08T00:00:00Z",
+      "ends": "2020-02-09T00:00:00Z",
+      "slug": "auburnhacks",
+      "verified": true,
+      "link": "https://auburnhacks.com",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/473/thumb/AU-Background-Square.jpg",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 97,
+    "fields": {
+      "name": "BrickHack 6",
+      "location": "Rochester, NY",
+      "is_remote": false,
+      "starts": "2020-02-08T00:00:00Z",
+      "ends": "2020-02-09T00:00:00Z",
+      "slug": "brickhack-6",
+      "verified": true,
+      "link": "https://brickhack.io/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/208/thumb/BrickHack6_Asset.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 98,
+    "fields": {
+      "name": "HackHer413  ",
+      "location": "Amherst, MA",
+      "is_remote": false,
+      "starts": "2020-02-08T00:00:00Z",
+      "ends": "2020-02-09T00:00:00Z",
+      "slug": "hackher413",
+      "verified": true,
+      "link": "https://www.hackher413.com",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/391/thumb/backdrop.jpg",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 99,
+    "fields": {
+      "name": "Hacklahoma",
+      "location": "Norman, OK",
+      "is_remote": false,
+      "starts": "2020-02-08T00:00:00Z",
+      "ends": "2020-02-09T00:00:00Z",
+      "slug": "hacklahoma",
+      "verified": true,
+      "link": "https://2020.hacklahoma.org/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/471/thumb/background_%283%29.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 100,
+    "fields": {
+      "name": "[email\u00a0protected]",
+      "location": "Stony Brook, NY",
+      "is_remote": false,
+      "starts": "2020-02-14T00:00:00Z",
+      "ends": "2020-02-16T00:00:00Z",
+      "slug": "email-protected",
+      "verified": true,
+      "link": "https://www.cewit.org/programs/events/hack.php",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/273/thumb/Untitled_design_%282%29.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 101,
+    "fields": {
+      "name": "Hack the Valley IIII",
+      "location": "Scarborough, ON",
+      "is_remote": false,
+      "starts": "2020-02-14T00:00:00Z",
+      "ends": "2020-02-16T00:00:00Z",
+      "slug": "hack-the-valley-iiii",
+      "verified": true,
+      "link": "https://hackthevalley.io/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/469/thumb/HACK-VALLEY-SPLASH.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 102,
+    "fields": {
+      "name": "SteelHacks",
+      "location": "Pittsburgh, PA",
+      "is_remote": false,
+      "starts": "2020-02-14T00:00:00Z",
+      "ends": "2020-02-15T00:00:00Z",
+      "slug": "steelhacks",
+      "verified": true,
+      "link": "http://steelhacks.com/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/478/thumb/Aerial.jpg",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 103,
+    "fields": {
+      "name": "VTHacks",
+      "location": "Blacksburg, VA",
+      "is_remote": false,
+      "starts": "2020-02-14T00:00:00Z",
+      "ends": "2020-02-16T00:00:00Z",
+      "slug": "vthacks",
+      "verified": true,
+      "link": "https://vthacks.com/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/482/thumb/vthacksbackburussmatrixfinal.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 104,
+    "fields": {
+      "name": "HackUNT",
+      "location": "Denton, TX",
+      "is_remote": false,
+      "starts": "2020-02-15T00:00:00Z",
+      "ends": "2020-02-16T00:00:00Z",
+      "slug": "hackunt",
+      "verified": true,
+      "link": "https://unthackathon.com/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/462/thumb/A49E64BC-3247-481C-82C6-1B8F11D3EBCA.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 105,
+    "fields": {
+      "name": "MakeUofT",
+      "location": "Toronto, ON",
+      "is_remote": false,
+      "starts": "2020-02-15T00:00:00Z",
+      "ends": "2020-02-16T00:00:00Z",
+      "slug": "makeuoft",
+      "verified": true,
+      "link": "https://ieee.utoronto.ca/makeuoft/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/410/thumb/Banner.jpg",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 106,
+    "fields": {
+      "name": "TAMUmake",
+      "location": "College Station, TX",
+      "is_remote": false,
+      "starts": "2020-02-15T00:00:00Z",
+      "ends": "2020-02-16T00:00:00Z",
+      "slug": "tamumake",
+      "verified": true,
+      "link": "https://tamumake.com/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/460/thumb/tamumake_background.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 107,
+    "fields": {
+      "name": "Uncommon Hacks",
+      "location": "Chicago, IL",
+      "is_remote": false,
+      "starts": "2020-02-15T00:00:00Z",
+      "ends": "2020-02-16T00:00:00Z",
+      "slug": "uncommon-hacks",
+      "verified": true,
+      "link": "https://hacks2020.uncommonhacks.com/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/461/thumb/hacks2020_square.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 108,
+    "fields": {
+      "name": "CalvinHacks",
+      "location": "Grand Rapids, MI",
+      "is_remote": false,
+      "starts": "2020-02-21T00:00:00Z",
+      "ends": "2020-02-22T00:00:00Z",
+      "slug": "calvinhacks",
+      "verified": true,
+      "link": "https://calvinhacks.com/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/470/thumb/cheese.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 109,
+    "fields": {
+      "name": "DragonHacks",
+      "location": "Philadelphia, PA",
+      "is_remote": false,
+      "starts": "2020-02-22T00:00:00Z",
+      "ends": "2020-02-23T00:00:00Z",
+      "slug": "dragonhacks",
+      "verified": true,
+      "link": "https://dragonhacks.org/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/464/thumb/logoBack__2_.jpg",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 110,
+    "fields": {
+      "name": "HackCU VI",
+      "location": "Boulder, CO",
+      "is_remote": false,
+      "starts": "2020-02-22T00:00:00Z",
+      "ends": "2020-02-23T00:00:00Z",
+      "slug": "hackcu-vi",
+      "verified": true,
+      "link": "https://hackcu.org",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/468/thumb/hackcu_background.jpg",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 111,
+    "fields": {
+      "name": "Hacklytics  ",
+      "location": "Atlanta, GA",
+      "is_remote": false,
+      "starts": "2020-02-22T00:00:00Z",
+      "ends": "2020-02-23T00:00:00Z",
+      "slug": "hacklytics",
+      "verified": true,
+      "link": "https://hacklytics.io/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/475/thumb/Klaus.jpg",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 112,
+    "fields": {
+      "name": "Pearl Hacks",
+      "location": "Chapel Hill, NC",
+      "is_remote": false,
+      "starts": "2020-02-22T00:00:00Z",
+      "ends": "2020-02-23T00:00:00Z",
+      "slug": "pearl-hacks",
+      "verified": true,
+      "link": "https://pearlhacks.com/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/463/thumb/phbg3-40_%281%29.jpg",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 113,
+    "fields": {
+      "name": "RevolutionUC",
+      "location": "Cincinnati, OH",
+      "is_remote": false,
+      "starts": "2020-02-22T00:00:00Z",
+      "ends": "2020-02-23T00:00:00Z",
+      "slug": "revolutionuc",
+      "verified": true,
+      "link": "https://revolutionuc.com",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/485/thumb/cincinnati-university-slide-ULRW-superJumbo_%281%29.jpg",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 114,
+    "fields": {
+      "name": "SacHacks",
+      "location": "Sacramento, CA",
+      "is_remote": false,
+      "starts": "2020-02-22T00:00:00Z",
+      "ends": "2020-02-23T00:00:00Z",
+      "slug": "sachacks",
+      "verified": true,
+      "link": "http://sachacks.io/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/459/thumb/saturn-01.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 115,
+    "fields": {
+      "name": "HackMerced",
+      "location": "Merced, CA",
+      "is_remote": false,
+      "starts": "2020-02-28T00:00:00Z",
+      "ends": "2020-03-01T00:00:00Z",
+      "slug": "hackmerced",
+      "verified": true,
+      "link": "http://hackmerced.io",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/489/thumb/background_%285%29.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 116,
+    "fields": {
+      "name": "SLO Hacks",
+      "location": "San Luis Obispo, CA",
+      "is_remote": false,
+      "starts": "2020-02-28T00:00:00Z",
+      "ends": "2020-03-01T00:00:00Z",
+      "slug": "slo-hacks",
+      "verified": true,
+      "link": "https://slohacks.com",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/488/thumb/Background_%284%29.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 117,
+    "fields": {
+      "name": "HackTCNJ",
+      "location": "Ewing Township, NJ",
+      "is_remote": false,
+      "starts": "2020-02-29T00:00:00Z",
+      "ends": "2020-03-01T00:00:00Z",
+      "slug": "hacktcnj",
+      "verified": true,
+      "link": "https://www.hacktcnj.com/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/465/thumb/tcnj.jpg",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 118,
+    "fields": {
+      "name": "ProfHacks",
+      "location": "Glassboro, NJ",
+      "is_remote": false,
+      "starts": "2020-02-29T00:00:00Z",
+      "ends": "2020-03-01T00:00:00Z",
+      "slug": "profhacks",
+      "verified": true,
+      "link": "https://profhacks.com/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/467/thumb/ece_building_square.jpg",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 119,
+    "fields": {
+      "name": "WiCHacks",
+      "location": "Rochester, NY",
+      "is_remote": false,
+      "starts": "2020-02-29T00:00:00Z",
+      "ends": "2020-03-01T00:00:00Z",
+      "slug": "wichacks",
+      "verified": true,
+      "link": "https://wichacks.io",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/479/thumb/IMG-3693.PNG",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 120,
+    "fields": {
+      "name": "HackNYU",
+      "location": "Brooklyn, NY",
+      "is_remote": false,
+      "starts": "2020-03-06T00:00:00Z",
+      "ends": "2020-03-08T00:00:00Z",
+      "slug": "hacknyu",
+      "verified": true,
+      "link": "https://hacknyu.org/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/491/thumb/Screen_Shot_2020-02-05_at_12.16.06_PM.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 121,
+    "fields": {
+      "name": "Hacktech",
+      "location": "Pasadena, CA",
+      "is_remote": false,
+      "starts": "2020-03-06T00:00:00Z",
+      "ends": "2020-03-08T00:00:00Z",
+      "slug": "hacktech",
+      "verified": true,
+      "link": "https://hacktech.io/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/466/thumb/event_background.jpg",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 122,
+    "fields": {
+      "name": "AthenaHacks",
+      "location": "Los Angeles, CA",
+      "is_remote": false,
+      "starts": "2020-03-07T00:00:00Z",
+      "ends": "2020-03-08T00:00:00Z",
+      "slug": "athenahacks",
+      "verified": true,
+      "link": "https://athenahacks.com/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/449/thumb/mlh_background.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 123,
+    "fields": {
+      "name": "cmd-f",
+      "location": "Vancouver, BC",
+      "is_remote": false,
+      "starts": "2020-03-07T00:00:00Z",
+      "ends": "2020-03-08T00:00:00Z",
+      "slug": "cmd-f",
+      "verified": true,
+      "link": "https://cmd-f.nwplus.io/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/493/thumb/MLH_Event_Graphics.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 124,
+    "fields": {
+      "name": "HackWesTX",
+      "location": "Lubbock, TX",
+      "is_remote": false,
+      "starts": "2020-03-07T00:00:00Z",
+      "ends": "2020-03-08T00:00:00Z",
+      "slug": "hackwestx",
+      "verified": true,
+      "link": "https://hackwestx.appspot.com",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/492/thumb/HackWesTX-Background.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 125,
+    "fields": {
+      "name": "Hack Quarantine",
+      "location": "Everywhere, Worldwide",
+      "is_remote": true,
+      "starts": "2020-03-23T00:00:00Z",
+      "ends": "2020-04-12T00:00:00Z",
+      "slug": "hack-quarantine",
+      "verified": true,
+      "link": "https://hackquarantine.com/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/513/thumb/IMG_0352.jpeg",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 126,
+    "fields": {
+      "name": "LA Hacks",
+      "location": "Everywhere, Worldwide",
+      "is_remote": true,
+      "starts": "2020-03-27T00:00:00Z",
+      "ends": "2020-03-29T00:00:00Z",
+      "slug": "la-hacks",
+      "verified": true,
+      "link": "https://lahacks.com/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/509/thumb/IMG_5895.jpg",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 127,
+    "fields": {
+      "name": "WinHacks",
+      "location": "Windsor, ON",
+      "is_remote": true,
+      "starts": "2020-03-27T00:00:00Z",
+      "ends": "2020-03-29T00:00:00Z",
+      "slug": "winhacks",
+      "verified": true,
+      "link": "https://winhacks.ca/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/484/thumb/MLH-Banner.jpg",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 128,
+    "fields": {
+      "name": "HooHacks",
+      "location": "Charlottesville, VA",
+      "is_remote": true,
+      "starts": "2020-03-28T00:00:00Z",
+      "ends": "2020-03-29T00:00:00Z",
+      "slug": "hoohacks",
+      "verified": true,
+      "link": "https://www.hoohacks.io/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/506/thumb/hoohacks_background.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 129,
+    "fields": {
+      "name": "RowdyHacks",
+      "location": "San Antonio, TX",
+      "is_remote": true,
+      "starts": "2020-03-28T00:00:00Z",
+      "ends": "2020-03-29T00:00:00Z",
+      "slug": "rowdyhacks",
+      "verified": true,
+      "link": "https://rowdyhacks.org",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/507/thumb/UTSA_Campus_University_Center_And_Convocation_Center.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 130,
+    "fields": {
+      "name": "Local Hack Day: Share",
+      "location": "Everywhere, Worldwide",
+      "is_remote": true,
+      "starts": "2020-04-02T00:00:00Z",
+      "ends": "2020-04-20T00:00:00Z",
+      "slug": "local-hack-day-share",
+      "verified": true,
+      "link": "https://localhackday.mlh.io/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/517/thumb/draft-03share-online_1200_pixels_square.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 131,
+    "fields": {
+      "name": "CatHacks",
+      "location": "Lexington, KY",
+      "is_remote": true,
+      "starts": "2020-04-04T00:00:00Z",
+      "ends": "2020-04-05T00:00:00Z",
+      "slug": "cathacks",
+      "verified": true,
+      "link": "https://cathacks-online-hackathon.devpost.com/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/520/thumb/cathacks-bg.jpg",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 132,
+    "fields": {
+      "name": "Citrus Hack",
+      "location": "Riverside, CA",
+      "is_remote": true,
+      "starts": "2020-04-24T00:00:00Z",
+      "ends": "2020-04-26T00:00:00Z",
+      "slug": "citrus-hack",
+      "verified": true,
+      "link": "https://www.citrushack.com/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/522/thumb/citrus_cover1_%281%29.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 133,
+    "fields": {
+      "name": "HackDSC",
+      "location": "Online, North America",
+      "is_remote": true,
+      "starts": "2020-04-24T00:00:00Z",
+      "ends": "2020-04-26T00:00:00Z",
+      "slug": "hackdsc",
+      "verified": true,
+      "link": "https://hackdsc.com/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/523/thumb/hackdsc-banner.jpg",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 134,
+    "fields": {
+      "name": "hack:now",
+      "location": "Berkeley, CA",
+      "is_remote": true,
+      "starts": "2020-04-24T00:00:00Z",
+      "ends": "2020-04-26T00:00:00Z",
+      "slug": "hack-now",
+      "verified": true,
+      "link": "https://hacknow.calhacks.io/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/521/thumb/mlh_%282%29.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 135,
+    "fields": {
+      "name": "DistanceHacks",
+      "location": "Millburn, NJ",
+      "is_remote": true,
+      "starts": "2020-05-01T00:00:00Z",
+      "ends": "2020-05-03T00:00:00Z",
+      "slug": "distancehacks",
+      "verified": true,
+      "link": "https://distancehacks.com/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/529/thumb/tint.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 136,
+    "fields": {
+      "name": "Hack at Home",
+      "location": "Everywhere, Worldwide",
+      "is_remote": true,
+      "starts": "2020-05-02T00:00:00Z",
+      "ends": "2020-05-03T00:00:00Z",
+      "slug": "hack-at-home",
+      "verified": true,
+      "link": "https://organize.mlh.io/participants/events/3456-digital-hackathon",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/526/thumb/hackathome-hero-banner.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 137,
+    "fields": {
+      "name": "TOHacks",
+      "location": "Toronto, ON",
+      "is_remote": true,
+      "starts": "2020-05-02T00:00:00Z",
+      "ends": "2020-05-03T00:00:00Z",
+      "slug": "tohacks",
+      "verified": true,
+      "link": "https://www.tohacks.ca/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/525/thumb/event_background.jpg",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 138,
+    "fields": {
+      "name": "Hacklarious",
+      "location": "Everywhere, Worldwide",
+      "is_remote": true,
+      "starts": "2020-05-09T00:00:00Z",
+      "ends": "2020-05-10T00:00:00Z",
+      "slug": "hacklarious",
+      "verified": true,
+      "link": "http://hackp.ac/hacklarious",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/532/thumb/_fin_banner-Hacklarious-11.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 139,
+    "fields": {
+      "name": "RU Hacks",
+      "location": "Toronto, ON",
+      "is_remote": true,
+      "starts": "2020-05-15T00:00:00Z",
+      "ends": "2020-05-17T00:00:00Z",
+      "slug": "ru-hacks",
+      "verified": true,
+      "link": "https://ruhacks.com/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/530/thumb/banner_%281%29.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 140,
+    "fields": {
+      "name": "Hack the Chain",
+      "location": "Everywhere, Worldwide",
+      "is_remote": true,
+      "starts": "2020-05-16T00:00:00Z",
+      "ends": "2020-05-17T00:00:00Z",
+      "slug": "hack-the-chain",
+      "verified": true,
+      "link": "http://hackp.ac/hackthechain",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/535/thumb/_fin_banner-_HacktheChain-10.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 141,
+    "fields": {
+      "name": "hths.hacks()",
+      "location": "Lincroft, NJ",
+      "is_remote": true,
+      "starts": "2020-05-16T00:00:00Z",
+      "ends": "2020-05-17T00:00:00Z",
+      "slug": "hths-hacks",
+      "verified": true,
+      "link": "https://hthshacks.com",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/531/thumb/MLH_listing_background.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 142,
+    "fields": {
+      "name": "BackyardHacks",
+      "location": "Everywhere, Worldwide",
+      "is_remote": true,
+      "starts": "2020-05-23T00:00:00Z",
+      "ends": "2020-05-24T00:00:00Z",
+      "slug": "backyardhacks",
+      "verified": true,
+      "link": "https://organize.mlh.io/participants/events/3466-backyardhacks",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/538/thumb/backyardhack_hero.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 143,
+    "fields": {
+      "name": "OpenHacks",
+      "location": "Everywhere, Worldwide",
+      "is_remote": true,
+      "starts": "2020-05-23T00:00:00Z",
+      "ends": "2020-05-24T00:00:00Z",
+      "slug": "openhacks",
+      "verified": true,
+      "link": "https://hack.theopencode.org",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/541/thumb/openhacks_backgroundmlh.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 144,
+    "fields": {
+      "name": "RookieHacks",
+      "location": "Everywhere, Worldwide",
+      "is_remote": true,
+      "starts": "2020-05-29T00:00:00Z",
+      "ends": "2020-05-31T00:00:00Z",
+      "slug": "rookiehacks",
+      "verified": true,
+      "link": "https://hackp.ac/RookieHacks",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/543/thumb/rookiehack_mlh-event-hero.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 145,
+    "fields": {
+      "name": "MasseyHacks",
+      "location": "Windsor, ON",
+      "is_remote": true,
+      "starts": "2020-05-30T00:00:00Z",
+      "ends": "2020-05-31T00:00:00Z",
+      "slug": "masseyhacks",
+      "verified": true,
+      "link": "https://masseyhacks.ca/",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/552/thumb/blueBridge_4x.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 146,
+    "fields": {
+      "name": "NotUniversity Hacks",
+      "location": "Everywhere, Worldwide",
+      "is_remote": true,
+      "starts": "2020-06-06T00:00:00Z",
+      "ends": "2020-06-07T00:00:00Z",
+      "slug": "notuniversity-hacks",
+      "verified": true,
+      "link": "https://hackp.ac/NotUniversityHacks",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/546/thumb/notUniversity_mlh-event-hero.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 147,
+    "fields": {
+      "name": "Same Home Different Hacks",
+      "location": "Everywhere, Worldwide",
+      "is_remote": true,
+      "starts": "2020-06-12T00:00:00Z",
+      "ends": "2020-06-14T00:00:00Z",
+      "slug": "same-home-different-hacks",
+      "verified": true,
+      "link": "https://hackp.ac/SameHomeDifferentHacks",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/549/thumb/same-home-different-hacks_mlh-event-hero.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 148,
+    "fields": {
+      "name": "Hack Girl Summer",
+      "location": "Everywhere, Worldwide",
+      "is_remote": true,
+      "starts": "2020-06-19T00:00:00Z",
+      "ends": "2020-06-21T00:00:00Z",
+      "slug": "hack-girl-summer",
+      "verified": true,
+      "link": "https://hackp.ac/HackGirlSummer",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/687/thumb/hack-girl-summer_mlh-event-hero.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 149,
+    "fields": {
+      "name": "Def Hacks Virtual",
+      "location": "Everywhere, Worldwide",
+      "is_remote": true,
+      "starts": "2020-06-20T00:00:00Z",
+      "ends": "2020-06-21T00:00:00Z",
+      "slug": "def-hacks-virtual",
+      "verified": true,
+      "link": "https://defhacks.co/hackathons/virtual",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/921/thumb/Square_%281%29.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  },
+  {
+    "model": "hackathon.hackathon",
+    "pk": 150,
+    "fields": {
+      "name": "Data Day Grind",
+      "location": "Everywhere, Worldwide",
+      "is_remote": true,
+      "starts": "2020-06-27T00:00:00Z",
+      "ends": "2020-06-28T00:00:00Z",
+      "slug": "data-day-grind",
+      "verified": true,
+      "link": "https://hackp.ac/DataDayGrind",
+      "img": "https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/688/thumb/data-day-grind_mlh-event-hero.png",
+      "added_by": 1,
+      "modified": "2020-07-12T18:29:52Z"
+    }
+  }
+]
