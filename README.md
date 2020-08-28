@@ -13,7 +13,7 @@ Website for Hackathon Mentors
 
 1. Clone into this repository:
   ```shell
-  $ git clone git@github.com:hackathon-mentors/hackathon-mentors-web.git
+  $ git clone https://github.com/hackathon-mentors/hackathon-mentors-web.git
   ```
 
 2. In the repository's root directory, create a directory named `secrets` and make a `django_secret` file to create your own [Django secret key](https://docs.djangoproject.com/en/3.0/ref/settings/#secret-key).
