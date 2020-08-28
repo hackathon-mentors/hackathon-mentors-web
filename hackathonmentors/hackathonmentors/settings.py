@@ -97,11 +97,11 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': os.environ.get('DATABASE_NAME', 'hackathonmentors'),
-        'USER': os.environ.get('DATABASE_USER', 'hackathonmentors_user'),
-        'PASSWORD': os.environ.get('DATABASE_PASS', 'hackathonmentors_pass'),
-        'HOST': os.environ.get('DATABASE_HOST', 'hackathonmentors_db'),
-        'PORT': os.environ.get('DATABASE_PORT', 3306),
+        'NAME': os.environ.get('MYSQL_DATABASE', 'hackathonmentors'),
+        'USER': os.environ.get('MYSQL_USER', 'hackathonmentors_user'),
+        'PASSWORD': os.environ.get('MYSQL_PASSWORD', 'hackathonmentors_pass'),
+        'HOST': 'hackathonmentors_db',
+        'PORT': 3306,
     }
 }
 
