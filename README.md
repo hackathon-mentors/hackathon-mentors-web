@@ -23,6 +23,19 @@ Website for Hackathon Mentors
   $ mkdir secrets && cd secrets
   $ cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 50 | head -n 1 > django_secret
   ```
+
+  Use the following template to create `db.env` in `secrets` folder, using your preferred text editor:
+
+  ```shell
+  MYSQL_ROOT_PASSWORD=
+  MYSQL_DATABASE=
+  MYSQL_USER=
+  MYSQL_PASSWORD=
+  MYSQL_ROOT_HOST=%
+  ```
+
+  Note: `MYSQL_ROOT_PASSWORD` will NOT be used at all. Any database operation is done through a user named `MYSQL_USER` authenticated with `MYSQL_PASSWORD`, that will have all privilege over `MYSQL_DATABASE` that this project will be using. Keep `MYSQL_ROOT_HOST=%` intact.
+
 3. Run `docker-compose up -d` to start building & spinning up the `web` and `db` images.
 4. `docker-compose exec web bash` to go into the django (web) image:
   - `python hackathonmentors/manage.py migrate` to set up initial database
