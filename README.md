@@ -42,6 +42,7 @@ Website for Hackathon Mentors
   - `python hackathonmentors/manage.py createsuperuser` to create an admin user for your localhost.
   - `python hackathonmentors/manage.py loaddata hackathonmentors/hackathon/fixtures/0001_initial.json` to load up sample hackathon data (from [HackathonScraper](https://github.com/hackathon-mentors/HackathonScraper)!)
      NOTE: The fixture will be bind the sample hackathon objects' creator as the first user (i.e. `id=1`) you created from running the `createsuperuser` command from above.
+  - Run `UPDATE django_site SET domain='127.0.0.1', name='127.0.0.1' WHERE id='1';` in the SQL database to expose the site locally.
 5. Visit [http://localhost:8000/](http://localhost:8000/) :sparkles:
 
 ## Deployment

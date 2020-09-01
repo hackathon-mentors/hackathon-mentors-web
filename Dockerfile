@@ -5,6 +5,7 @@ RUN mkdir /build
 WORKDIR /build
 
 RUN curl -sL https://deb.nodesource.com/setup_12.x | bash -
+RUN apt-get install apt-utils
 RUN apt-get install -y nodejs
 
 COPY requirements.txt /build
