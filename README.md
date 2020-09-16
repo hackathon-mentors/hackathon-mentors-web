@@ -28,7 +28,7 @@ Website for Hackathon Mentors
 
 
   ```shell
-  $ cat /dev/urandom | LC_ALL=C tr -dc 'a-zA-Z0-9' | fold -w 50 | head -n 1
+  $ cat /dev/urandom | LC_ALL=C tr -dc 'a-zA-Z0-9' | fold -w 50 | head -n 1 > django_secret
   ```
 
   Use the following template to create `db.env` in `secrets` folder, using your preferred text editor:
