@@ -24,6 +24,13 @@ Website for Hackathon Mentors
   $ cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 50 | head -n 1 > django_secret
   ```
 
+  (Note: for macOS, the last command may not run and shell would complain about `tr: Illegal byte sequence` error. Use the following instead:
+
+
+  ```shell
+  $ cat /dev/urandom | LC_ALL=C tr -dc 'a-zA-Z0-9' | fold -w 50 | head -n 1
+  ```
+
   Use the following template to create `db.env` in `secrets` folder, using your preferred text editor:
 
   ```shell
