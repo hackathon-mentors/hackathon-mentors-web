@@ -1,0 +1,30 @@
+version: '3.5'
+
+services:
+  cloudsql_proxy:
+    container_name: cloudsql_proxy
+    image: gcr.io/cloudsql-docker/gce-proxy:1.11
+    command: /cloud_sql_proxy --dir=/cloudsql -instances=horizontal-ring-291415:us-east1:hm-staging-db=tcp:0.0.0.0:6603 -credential_file=/secrets/cloudsql/credentials.json
+    expose:
+      - 6603
+    volumes:
+      - ./secrets/hm-service.json:/secrets/cloudsql/credentials.json
+    restart: always
+
+  web:
+    depends_on:
+    - cloudsql_proxy
+    ports:
+      - "8000:8000"
+    environment:
+      DEBUG: 1
+      MYSQL_HOST: cloudsql_proxy
+      MYSQL_PORT: 6603
+    secrets:
+      - django_secret
+    env_file:
+      - ./secrets/db-staging.env
+  
+secrets:
+  django_secret:
+    file: ./secrets/django_secret
