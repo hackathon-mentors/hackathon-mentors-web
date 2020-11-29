@@ -30,6 +30,8 @@ if int(os.environ.get("DEBUG", 0)) == 1:
 
 ALLOWED_HOSTS = ['*']
 
+SITE_ID = 1
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -100,8 +102,8 @@ DATABASES = {
         'NAME': os.environ.get('MYSQL_DATABASE', 'hackathonmentors'),
         'USER': os.environ.get('MYSQL_USER', 'hackathonmentors_user'),
         'PASSWORD': os.environ.get('MYSQL_PASSWORD', 'hackathonmentors_pass'),
-        'HOST': 'hackathonmentors_db',
-        'PORT': 3306,
+        'HOST': os.environ.get('MYSQL_HOST', 'hackathonmentors_db'),
+        'PORT': os.environ.get('MYSQL_PORT', 3306),
     }
 }
 
@@ -182,7 +184,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_ROOT = '/build/hackathonmentors/static'
-STATIC_URL = '/static/' if DEBUG else 'http://storage.googleapis.com/hm-store/static/'
+STATIC_URL = '/static/' if DEBUG else 'http://storage.googleapis.com/hm-staging/web/static/'
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "hackathonmentors", "static"),
