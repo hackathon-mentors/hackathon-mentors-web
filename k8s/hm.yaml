@@ -30,7 +30,7 @@ metadata:
   labels:
     app: hm-web
 spec:
-  replicas: 2
+  replicas: 1
   template:
     metadata:
       labels:
@@ -38,7 +38,7 @@ spec:
     spec:
       containers:
       - name: django
-        # Replace  with your project ID or use `make template`
+        # Replace with your project ID or use `make template`
         image: gcr.io/hackathon-mentors/hm-web:1.0.2
         # This setting makes nodes pull the docker image every time before
         # starting the pod. This is useful when debugging, but should be turned
