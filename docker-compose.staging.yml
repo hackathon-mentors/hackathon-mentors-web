@@ -7,8 +7,10 @@ services:
     command: /cloud_sql_proxy --dir=/cloudsql -instances=horizontal-ring-291415:us-east1:hm-staging-db=tcp:0.0.0.0:6603 -credential_file=/secrets/cloudsql/credentials.json
     expose:
       - 6603
+    ports:
+      - "6603:6603"
     volumes:
-      - ./secrets/hm-service.json:/secrets/cloudsql/credentials.json
+      - ./secrets/credentials.json:/secrets/cloudsql/credentials.json
     restart: always
 
   web:
@@ -18,8 +20,6 @@ services:
       - "8000:8000"
     environment:
       DEBUG: 1
-      MYSQL_HOST: cloudsql_proxy
-      MYSQL_PORT: 6603
     secrets:
       - django_secret
     env_file:
