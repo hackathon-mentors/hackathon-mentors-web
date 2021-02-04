@@ -1,12 +1,12 @@
 version: '3.5'
 
 services:
-  web:
+  django:
     container_name: hackathonmentors
-    build: .
+    build: ./api
     command: python hackathonmentors/manage.py runserver 0.0.0.0:8000
     volumes:
-      - .:/build
+      - ./api:/build
     ports:
       - "8000:8000"
     environment:
