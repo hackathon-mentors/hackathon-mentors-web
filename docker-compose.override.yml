@@ -12,7 +12,7 @@ services:
       - ./data/sql:/docker-entrypoint-initdb.d
       - ./data/mysql:/var/lib/mysql
 
-  web:
+  django:
     depends_on:
       - db
     env_file:
