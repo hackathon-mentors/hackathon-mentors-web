@@ -16,6 +16,12 @@ services:
     secrets:
       - django_secret
 
+  web:
+    image: node:15.8.0
+    command: sh entrypoint.sh
+    working_dir: /web
+    volumes:
+      - ./web:/web
 
   nginx:
     image: nginx:latest
