@@ -6,7 +6,11 @@ from django.views.generic.base import RedirectView
 from rest_framework import routers
 
 from hackathonmentors import views
+from hackathon import views as hackathons
+
 router = routers.DefaultRouter()
+router.register(r'hackathons', hackathons.HackathonViewSet)
+
 
 urlpatterns = [
     path('', views.BaseView.as_view(template_name="index.html"), name="index"),
