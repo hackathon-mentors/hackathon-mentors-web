@@ -3,10 +3,14 @@ from django.contrib.staticfiles.storage import staticfiles_storage
 from django.urls import include, path
 from django.views.generic.base import RedirectView
 
+from rest_framework import routers
+
 from hackathonmentors import views
+router = routers.DefaultRouter()
 
 urlpatterns = [
     path('', views.BaseView.as_view(template_name="index.html"), name="index"),
+    path('api/', include(router.urls)),
     path('code-of-conduct', views.BaseView.as_view(template_name="coc.html"), name="coc"),
     path('user/', include('user.urls')),
     path('hackathons/', include('hackathon.urls')),
