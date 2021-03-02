@@ -8,3 +8,4 @@ google-cloud-storage==1.36.0
 djangorestframework==3.12.2
 markdown==3.3.3
 django-filter==2.4.0
+django-rest-auth==0.9.5
