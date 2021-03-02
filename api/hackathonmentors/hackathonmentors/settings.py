@@ -45,6 +45,9 @@ INSTALLED_APPS = [
     'django.contrib.sites',
 
     'rest_framework',
+    'rest_framework.authtoken',
+    'rest_auth',
+    'rest_auth.registration',
 
     # EXTERNAL DEPENDENCIES
     'allauth',
