@@ -13,6 +13,7 @@ services:
       DJANGO_SECRET_KEY: /var/run/secrets/django_secret
       EMAIL_SERVICE_NAME: mailchimp
       EMAIL_NEWLETTER_LIST_ID: d574cb485f
+      DATABASE_HOST: db
     secrets:
       - django_secret
 
