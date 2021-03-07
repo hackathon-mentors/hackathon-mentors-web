@@ -16,6 +16,7 @@ services:
     - cloudsql_proxy
     ports:
       - "8000:8000"
+    command: sh entrypoint.prod.sh
     environment:
       DEBUG: 0
       DATABASE_HOST: cloudsql_proxy

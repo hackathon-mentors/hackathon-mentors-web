@@ -2,7 +2,7 @@ version: '3.5'
 
 services:
   db:
-    container_name: hackathonmentors_db
+    container_name: db
     image: mysql:5.7
     ports:
       - '6033:3306'
@@ -12,7 +12,7 @@ services:
       - ./data/sql:/docker-entrypoint-initdb.d
       - ./data/mysql:/var/lib/mysql
 
-  web:
+  django:
     depends_on:
       - db
     env_file:
@@ -21,3 +21,4 @@ services:
       DEBUG: 1
       EMAIL_SERVICE_NAME: mailchimp
       EMAIL_NEWSLETTER_LIST_ID: d574cb485f
+      DATABASE_HOST: db
