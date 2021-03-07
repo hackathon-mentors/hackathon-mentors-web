@@ -21,3 +21,4 @@ services:
       DEBUG: 1
       EMAIL_SERVICE_NAME: mailchimp
       EMAIL_NEWSLETTER_LIST_ID: d574cb485f
+      DATABASE_HOST: db
