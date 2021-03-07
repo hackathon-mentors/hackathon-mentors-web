@@ -20,7 +20,7 @@ services:
   web:
     container_name: web
     image: node:14.16.0
-    command: sh entrypoint.sh
+    command: sh entrypoint.dev.sh
     working_dir: /web
     volumes:
       - ./web:/web
