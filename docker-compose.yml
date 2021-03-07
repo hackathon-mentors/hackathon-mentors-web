@@ -20,6 +20,8 @@ services:
     container_name: web
     image: node:14.16.0
     command: sh entrypoint.dev.sh
+    ports:
+      - 3000:3000
     working_dir: /web
     volumes:
       - ./web:/web
