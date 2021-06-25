@@ -23,7 +23,7 @@
 #   https://kubernetes.io/docs/user-guide/deployments/
 
 # [START kubernetes_deployment]
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: hm-web
@@ -31,6 +31,9 @@ metadata:
     app: hm-web
 spec:
   replicas: 1
+  selector:
+    matchLabels:
+      app: hm-web
   template:
     metadata:
       labels:
@@ -39,7 +42,7 @@ spec:
       containers:
       - name: django
         # Replace with your project ID or use `make template`
-        image: gcr.io/hackathon-mentors/hm-web:1.0.2
+        image: gcr.io/horizontal-ring-291415/hm-web:1.0.4
         # This setting makes nodes pull the docker image every time before
         # starting the pod. This is useful when debugging, but should be turned
         # off in production.
@@ -56,12 +59,12 @@ spec:
             - name: DATABASE_USER
               valueFrom:
                 secretKeyRef:
-                  name: cloudsql
+                  name: cloudsql-staging
                   key: username
             - name: DATABASE_PASS
               valueFrom:
                 secretKeyRef:
-                  name: cloudsql
+                  name: cloudsql-staging
                   key: password
             - name: DJANGO_SECRET_KEY
               valueFrom:
@@ -76,7 +79,7 @@ spec:
       - image: gcr.io/cloudsql-docker/gce-proxy:1.16
         name: cloudsql-proxy
         command: ["/cloud_sql_proxy", "--dir=/cloudsql",
-                  "-instances=hackathon-mentors:us-east1:hackathon-mentors-db=tcp:6603",
+                  "-instances=horizontal-ring-291415:us-east1:hm-staging-db=tcp:6603",
                   "-credential_file=/secrets/cloudsql/credentials.json"]
         volumeMounts:
           - name: cloudsql-oauth-credentials

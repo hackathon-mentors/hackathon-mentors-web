@@ -3,8 +3,12 @@ from django.urls import reverse_lazy
 from django.views.generic.edit import CreateView
 from django.views.generic import ListView, DetailView
 
+from rest_framework import viewsets
+from rest_framework import permissions
+
 from hackathonmentors.views import HackathonMentorsMixin
 from hackathon.models import Hackathon
+from hackathon.serializers import HackathonSerializer
 
 from slugify import slugify
 
@@ -21,6 +25,15 @@ class HackathonListView(HackathonMentorsMixin, ListView):
 
     def get_queryset(self):
         return super().get_queryset().filter(verified=True)
+
+
+class HackathonViewSet(viewsets.ModelViewSet):
+    """
+    API endpoint that allows hackathon events to be viewed or edited.
+    """
+    queryset = Hackathon.objects.all().order_by('-starts')
+    serializer_class = HackathonSerializer
+    # permission_classes = [permissions.IsAuthenticated]
 
 
 class HackathonDetailsView(HackathonMentorsMixin, DetailView):

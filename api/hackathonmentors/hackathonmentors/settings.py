@@ -30,6 +30,8 @@ if int(os.environ.get("DEBUG", 0)) == 1:
 
 ALLOWED_HOSTS = ['*']
 
+SITE_ID = 1
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -41,6 +43,11 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.sites',
+
+    'rest_framework',
+    'rest_framework.authtoken',
+    'rest_auth',
+    'rest_auth.registration',
 
     # EXTERNAL DEPENDENCIES
     'allauth',
@@ -97,11 +104,11 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': os.environ.get('MYSQL_DATABASE', 'hackathonmentors'),
-        'USER': os.environ.get('MYSQL_USER', 'hackathonmentors_user'),
-        'PASSWORD': os.environ.get('MYSQL_PASSWORD', 'hackathonmentors_pass'),
-        'HOST': 'hackathonmentors_db',
-        'PORT': 3306,
+        'NAME': os.environ.get('DATABASE_NAME', 'hackathonmentors'),
+        'USER': os.environ.get('DATABASE_USER', 'hackathonmentors_user'),
+        'PASSWORD': os.environ.get('DATABASE_PASS', 'hackathonmentors_pass'),
+        'HOST': os.environ.get('DATABASE_HOST', 'hackathonmentors_db'),
+        'PORT': os.environ.get('DATABASE_PORT', 3306),
     }
 }
 
@@ -182,7 +189,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_ROOT = '/build/hackathonmentors/static'
-STATIC_URL = '/static/' if DEBUG else 'http://storage.googleapis.com/hm-store/static/'
+STATIC_URL = '/static/' if DEBUG else 'http://storage.googleapis.com/hm-staging/web/static/'
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "hackathonmentors", "static"),

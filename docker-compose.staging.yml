@@ -4,11 +4,13 @@ services:
   cloudsql_proxy:
     container_name: cloudsql_proxy
     image: gcr.io/cloudsql-docker/gce-proxy:1.11
-    command: /cloud_sql_proxy --dir=/cloudsql -instances=hackathon-mentors:us-east1:hackathon-mentors-db=tcp:0.0.0.0:6603 -credential_file=/secrets/cloudsql/credentials.json
+    command: /cloud_sql_proxy --dir=/cloudsql -instances=horizontal-ring-291415:us-east1:hm-staging-db=tcp:0.0.0.0:6603 -credential_file=/secrets/cloudsql/credentials.json
     expose:
       - 6603
+    ports:
+      - "6603:6603"
     volumes:
-      - ./secrets/gcloud-service.json:/secrets/cloudsql/credentials.json
+      - ./secrets/credentials.json:/secrets/cloudsql/credentials.json
     restart: always
 
   web:
@@ -16,14 +18,13 @@ services:
     - cloudsql_proxy
     ports:
       - "8000:8000"
-    command: sh entrypoint.prod.sh
     environment:
-      DEBUG: 0
-      DATABASE_HOST: cloudsql_proxy
-      DATABASE_PORT: 6603
+      DEBUG: 1
     secrets:
       - django_secret
-
+    env_file:
+      - ./secrets/db-staging.env
+  
 secrets:
   django_secret:
     file: ./secrets/django_secret
