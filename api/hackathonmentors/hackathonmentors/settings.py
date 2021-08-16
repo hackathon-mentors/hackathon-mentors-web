@@ -120,6 +120,9 @@ ACCOUNT_CONFIRM_EMAIL_ON_GET = True
 ACCOUNT_EMAIL_REQUIRED = True
 AUTH_USER_MODEL = 'user.CustomUser'
 LOGIN_REDIRECT_URL = '/'
+ACCOUNT_FORMS = {
+    'signup': 'user.forms.HMUserSignupForm',
+}
 
 AUTHENTICATION_BACKENDS = (
     # Needed to login by username in Django admin, regardless of `allauth`
