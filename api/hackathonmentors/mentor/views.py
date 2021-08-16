@@ -23,6 +23,10 @@ class MentorListView(HackathonMentorsMixin, ListView):
         context = super().get_context_data(**kwargs)
         return context
 
+    def get_queryset(self):
+        active = Mentor.objects.filter(is_active=True) 
+        return active
+    
 
 class MentorDetailsView(HackathonMentorsMixin, DetailView):
     model = Mentor

@@ -1,18 +1,20 @@
 <div class="container">
   <div class="d-flex flex-row flex-wrap">
     {% for event in hackathons %}
-      <div class="col-sm-4">
-        <div class="card mb-4 shadow-sm">
-        <img class="card-img-top" src="{{ event.img }}">
-          <div class="card-body">
-            <div class="card-text">
-              <h4 class=""><a href="{% url 'hackathon_view' event.slug %}">{{ event.name }}</a></h4>
-              <h5 class="">{{ event.location }}</h5>
-              <span class="text-muted small">{{ event.starts|date }} - {{ event.ends|date }}</span>
+      {% if event.verified %}
+        <div class="col-sm-4">
+          <div class="card mb-4 shadow-sm">
+          <img class="card-img-top" src="{{ event.img }}">
+            <div class="card-body">
+              <div class="card-text">
+                <h4 class=""><a href="{% url 'hackathon_view' event.slug %}">{{ event.name }}</a></h4>
+                <h5 class="">{{ event.location }}</h5>
+                <span class="text-muted small">{{ event.starts|date }} - {{ event.ends|date }}</span>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      {% endif %}
     {% empty %}
       No hackathons yet.
     {% endfor %}

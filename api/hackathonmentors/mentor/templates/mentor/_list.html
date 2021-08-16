@@ -1,21 +1,20 @@
 <div class="container">
   <div class="d-flex flex-row flex-wrap">
     {% for m in mentors %}
-      {% if m.is_active %}
-        <article class="card m-3 shadow-sm">
-          <div class="d-flex flex-column">
-            <div class="card-top">
-              <img class="card-img-top mb-5" src="//placehold.it/240x120">
-              <img class="border rounded-circle border-light position-absolute" src="//placehold.it/128x128" style="top: 40px; left: 56px">
-            </div>
-            <div class="card-body py-3">
-              <div class="card-text">
-                <h4 class=""><a href="{% url 'mentor_view' user.username %}">{{ m.name }}</a> <small class="text-muted">@{{ m.username }}</small></h4>
-              </div>
+      <article class="card m-3 shadow-sm">
+        <div class="d-flex flex-column">
+          <div class="card-top">
+            <img class="card-img-top mb-5" src="//placehold.it/240x120">
+            <img class="border rounded-circle border-light position-absolute" src="//placehold.it/128x128" style="top: 40px; left: 56px">
+          </div>
+          <div class="card-body py-3">
+            <div class="card-text">
+              <h4 class=""><a href="{% url 'mentor_view' m.user %}">{{ m.name }}</a></h4>
+              <small class="text-muted">@{{ m.user }}</small>
             </div>
           </div>
-        </article>
-      {% endif %}
+        </div>
+      </article>
     {% empty %}
       No mentors yet.
     {% endfor %}

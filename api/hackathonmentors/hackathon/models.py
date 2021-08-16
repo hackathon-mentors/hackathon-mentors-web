@@ -20,6 +20,6 @@ class Hackathon(models.Model):
     def __str__(self):
         loc = "Remote" if self.is_remote else self.location
         return f"{self.name} ({loc}), {self.starts} - {self.ends}"
-
+        
     class Meta:
         db_table = 'hackathons'

@@ -2,16 +2,17 @@
 
 {% block body %}
 
-<header class="jumbotron text-center">
-  <div class="container">
-    <h1>{{ mentor.name }}</h1>
+<header class="bg-light py-3 px-3 text-left">
+  <div class="profile-container mt-3">
+      <img class="border rounded-circle border-light" src="//placehold.it/128x128" style="top: 40px; left: 56px">
+      <h3>{{ mentor.name }}</h3>
+      <a href='https://github.com/{{mentor.github}}'> <i class="fa fa-github" aria-hidden="true"></i> {{ mentor.github }}</a>
   </div>
 </header>
 
 <section class="py-5">
   <div class="container">
     <p>Location: {{ mentor.location }}</p>
-    <p>Github: {{ mentor.github }}</p>
     <p>Position: {{ mentor.job_title }}</p>
     <p>Skills: {{ mentor.skills }}</p>
   </div>
