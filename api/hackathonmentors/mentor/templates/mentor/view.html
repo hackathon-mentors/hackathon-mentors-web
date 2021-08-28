@@ -6,14 +6,21 @@
   <div class="profile-container mt-3">
       <img class="border rounded-circle border-light" src="//placehold.it/128x128" style="top: 40px; left: 56px">
       <h3>{{ mentor.name }}</h3>
+      <div class="container-pins">
       <a href='https://github.com/{{mentor.github}}'> <i class="fa fa-github" aria-hidden="true"></i> {{ mentor.github }}</a>
+      <br/>
+      <i class="fa fa-map-pin" aria-hidden="true"></i> {{mentor.location}}
+      <br/>
+      <i class="fa fa-building" aria-hidden="true"></i> {{mentor.job_title}}
+      </div>
+      {% for skill in mentor.skills %}
+      {{skill}}
+      {% endfor %}
   </div>
 </header>
 
 <section class="py-5">
   <div class="container">
-    <p>Location: {{ mentor.location }}</p>
-    <p>Position: {{ mentor.job_title }}</p>
     <p>Skills: {{ mentor.skills }}</p>
   </div>
 </section>

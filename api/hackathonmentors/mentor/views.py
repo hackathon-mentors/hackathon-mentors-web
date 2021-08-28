@@ -40,7 +40,7 @@ class MentorDetailsView(HackathonMentorsMixin, DetailView):
     def get_object(self, queryset=None):
         slug = self.kwargs.get(self.slug_url_kwarg)
         user = User.objects.filter(username=slug)
-        mentor = Mentor.objects.filter(user=user.first()) if user else None
+        mentor = Mentor.objects.filter(user=user.first(), is_active=True) if user else None
 
         return mentor.first() if mentor else None
 

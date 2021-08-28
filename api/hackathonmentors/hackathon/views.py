@@ -41,6 +41,22 @@ class HackathonDetailsView(HackathonMentorsMixin, DetailView):
     template_name = "hackathon/view.html"
     context_object_name = 'hackathon'
 
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        return context
+
+    def get_object(self, queryset=None):
+        slug = self.kwargs.get(self.slug_url_kwarg)
+        hackathon = Hackathon.objects.filter(slug=slug, verified=True) 
+
+        return hackathon.first() if hackathon else None
+
+    def get(self, request, *args, **kwargs):
+        self.object = self.get_object()
+        if not self.object:
+            self.template_name = "hackathon/not_found.html"
+        context = self.get_context_data(object=self.object)
+        return self.render_to_response(context)
 
 class HackathonCreateView(HackathonMentorsMixin, CreateView):
     model = Hackathon
