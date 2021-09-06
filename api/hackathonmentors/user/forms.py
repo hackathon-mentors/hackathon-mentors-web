@@ -1,5 +1,6 @@
 from django import forms
 from allauth.account.forms import SignupForm
+from user.models import CustomUser as User
 
 from django.utils.translation import gettext_lazy as _
 
@@ -15,3 +16,13 @@ class HMUserSignupForm(SignupForm):
         max_length=150, label=_("Last Name"),
         widget=forms.TextInput(attrs={"type": "text", "size": "150", "placeholder": _('Last Name')})
     )
+
+
+class HMUserEditForm(forms.ModelForm):
+    def __init__(self, user=None, *args, **kwargs):
+        self.user = user
+        super().__init__(*args, **kwargs)
+
+    class Meta:
+        model = User
+        fields = ['first_name', 'last_name', 'username']

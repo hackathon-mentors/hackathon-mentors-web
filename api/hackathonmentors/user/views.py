@@ -1,11 +1,25 @@
 from django.shortcuts import render
+from django.views.generic.edit import UpdateView
+from django.urls import reverse_lazy
 
 from allauth.account import views as allauth
 from hackathonmentors.views import BaseView
+from user.forms import HMUserEditForm
+from user.models import CustomUser
 
 
 class UserDashboardView(BaseView):
     template_name = "dashboard/home.html"
+
+
+class UserEditView(UpdateView):
+    model = CustomUser
+    form_class = HMUserEditForm
+    template_name = "user/edit.html"
+    success_url = reverse_lazy('user_edit')
+
+    def get_object(self):
+        return self.request.user
 
 
 """
