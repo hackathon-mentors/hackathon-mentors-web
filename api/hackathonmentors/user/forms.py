@@ -22,14 +22,6 @@ class HMUserSignupForm(SignupForm):
 
 
 class HMUserEditForm(forms.ModelForm):
-    def __init__(self, user=None, *args, **kwargs):
-        self.user = user
-        super().__init__(*args, **kwargs)
-
-    class Meta:
-        model = User
-        fields = ['first_name', 'last_name', 'username']
-
     helper = FormHelper()
     helper.form_class = 'form-group'
     helper.layout = Layout(
@@ -39,3 +31,11 @@ class HMUserEditForm(forms.ModelForm):
         ),
         Field('username', css_class='form-control mb-3'),
     )
+
+    def __init__(self, user=None, *args, **kwargs):
+        self.user = user
+        super().__init__(*args, **kwargs)
+
+    class Meta:
+        model = User
+        fields = ['first_name', 'last_name', 'username']
