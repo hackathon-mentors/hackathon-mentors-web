@@ -5,7 +5,7 @@ from user.models import CustomUser as User
 from django.utils.translation import gettext_lazy as _
 
 from crispy_forms.helper import FormHelper
-from crispy_forms.layout import Layout, Row, Column, Field
+from crispy_forms.layout import Layout, Row, Column, Field, Submit, Button
 
 
 class HMUserSignupForm(SignupForm):
@@ -29,7 +29,10 @@ class HMUserEditForm(forms.ModelForm):
             Column(Field('first_name'), css_class="col-6"),
             Column(Field('last_name'), css_class="col-6"),
         ),
-        Field('username', css_class='form-control mb-3'),
+        Row(
+            Column(Field('username'), css_class="col-12"),
+        ),
+        Submit('save', _('Save Information')),
     )
 
     def __init__(self, user=None, *args, **kwargs):
