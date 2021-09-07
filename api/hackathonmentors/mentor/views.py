@@ -2,7 +2,7 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.http import Http404
 from django.shortcuts import redirect
-from django.urls import reverse_lazy
+from django.urls import reverse, reverse_lazy
 from django.utils.decorators import method_decorator
 from django.views.generic import TemplateView, ListView, DetailView
 from django.views.generic.edit import CreateView
@@ -26,7 +26,7 @@ class MentorListView(HackathonMentorsMixin, ListView):
     def get_queryset(self):
         active = Mentor.objects.filter(is_active=True) 
         return active
-    
+
 
 class MentorDetailsView(HackathonMentorsMixin, DetailView):
     model = Mentor
@@ -58,6 +58,13 @@ class MentorRegistrationView(HackathonMentorsMixin, CreateView):
     form_class = MentorRegistrationForm
     template_name = "mentor/register.html"
     success_url = reverse_lazy('index')
+
+    def dispatch(self, request, *args, **kwargs):
+        if request.user:
+            messages.info(self.request, 'You are already registered as a mentor. Did you want to change your information?')
+            return redirect(reverse('mentor_view', args=[request.user]))
+
+        return super().dispatch(request, *args, **kwargs)
 
     def form_valid(self, form):
         self.object = form.save(commit=False)
