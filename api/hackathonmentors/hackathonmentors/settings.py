@@ -62,6 +62,7 @@ INSTALLED_APPS = [
     'hackathonmentors',
     'hackathon',
     'user',
+    'user.skill',
     'mentor',
 ]
 

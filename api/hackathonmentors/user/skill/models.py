@@ -1,6 +1,6 @@
 from django.db import models
 
-from hackathonmentors.user.models import CustomUser as User
+from user.models import CustomUser as User
 
 
 class Skill(models.Model):
@@ -10,4 +10,4 @@ class Skill(models.Model):
 class UserSkill(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     skill = models.ForeignKey(Skill, on_delete=models.CASCADE)
-    competency = models.PositiveSmallIntegerField()
+    proficiency = models.PositiveSmallIntegerField()
