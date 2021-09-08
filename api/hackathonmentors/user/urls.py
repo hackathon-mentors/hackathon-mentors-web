@@ -13,6 +13,8 @@ from django.conf import settings
 urlpatterns = [
     path("", views.UserDashboardView.as_view(), name="user_dashboard"),
 
+    path("edit/", views.UserEditView.as_view(), name="user_edit"),
+
     # allauth overrides
     path("signup/", views.HMSignupView.as_view(), name="account_signup"),
     path("login/", views.HMLoginView.as_view(), name="account_login"),
