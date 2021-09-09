@@ -1,3 +1,4 @@
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.shortcuts import render
 from django.views.generic.edit import UpdateView
 from django.urls import reverse_lazy
@@ -12,11 +13,13 @@ class UserDashboardView(BaseView):
     template_name = "dashboard/home.html"
 
 
-class UserEditView(UpdateView):
+class UserEditView(LoginRequiredMixin, UpdateView):
     model = CustomUser
     form_class = HMUserEditForm
     template_name = "user/edit.html"
     success_url = reverse_lazy('user_edit')
+    login_url = reverse_lazy('account_login')
+    redirect_field_name = 'next'
 
     def get_object(self):
         return self.request.user
