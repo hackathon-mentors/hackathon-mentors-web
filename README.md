@@ -34,14 +34,10 @@ Website for Hackathon Mentors
   Use the following template to create `db.env` in `secrets` folder, using your preferred text editor:
 
   ```shell
-  MYSQL_ROOT_PASSWORD=root
-  MYSQL_DATABASE=hackathonmentors
-  MYSQL_USER=hackathonmentors_user
-  MYSQL_PASSWORD=hackathonmentors_pass
-  MYSQL_ROOT_HOST=%
+  POSTGRES_DB=hackathonmentors
+  POSTGRES_USER=hackathonmentors_user
+  POSTGRES_PASSWORD=hackathonmentors_pass
   ```
-
-  Note: `MYSQL_ROOT_PASSWORD` will NOT be used at all. Any database operation is done through a user named `MYSQL_USER` authenticated with `MYSQL_PASSWORD`, that will have all privilege over `MYSQL_DATABASE` that this project will be using. Keep `MYSQL_ROOT_HOST=%` intact.
 
 3. Run `docker-compose up -d` to start building & spinning up the `web` and `db` images.
   - Since we are running docker-compose v3, the db may come up before the web server.
