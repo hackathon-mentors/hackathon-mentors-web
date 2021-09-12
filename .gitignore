@@ -170,6 +170,7 @@ dmypy.json
 
 secrets/
 data/mysql
+data/postgres
 
 .DS_Store
 
