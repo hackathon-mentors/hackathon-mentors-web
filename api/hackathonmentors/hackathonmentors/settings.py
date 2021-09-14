@@ -104,12 +104,12 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': os.environ.get('DATABASE_NAME', 'hackathonmentors'),
-        'USER': os.environ.get('DATABASE_USER', 'hackathonmentors_user'),
-        'PASSWORD': os.environ.get('DATABASE_PASS', 'hackathonmentors_pass'),
-        'HOST': os.environ.get('DATABASE_HOST', 'hackathonmentors_db'),
-        'PORT': os.environ.get('DATABASE_PORT', 3306),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': os.environ.get('POSTGRES_DB', 'hackathonmentors'),
+        'USER': os.environ.get('POSTGRES_USER', 'hackathonmentors_user'),
+        'PASSWORD': os.environ.get('POSTGRES_PASSWORD', 'hackathonmentors_pass'),
+        'HOST': os.environ.get('POSTGRES_HOST', 'db'),
+        'PORT': os.environ.get('POSTGRES_PORT', 5432),
     }
 }
 

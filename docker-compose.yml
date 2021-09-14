@@ -9,34 +9,30 @@ services:
       - ./api:/api
     ports:
       - "8000:8000"
-    environment:
-      DJANGO_SECRET_KEY: /var/run/secrets/django_secret
-      EMAIL_SERVICE_NAME: mailchimp
-      EMAIL_NEWLETTER_LIST_ID: d574cb485f
     secrets:
       - django_secret
-
-  # web:
-  #   container_name: web
-  #   image: node:14.16.0
-  #   command: sh entrypoint.dev.sh
-  #   ports:
-  #     - 3000:3000
-  #   working_dir: /web
-  #   volumes:
-  #     - ./web:/web
-
-  nginx:
-    container_name: nginx
-    image: nginx:latest
-    ports:
-      - 80:8080
-    volumes:
-      - ./nginx/nginx-proxy.conf:/etc/nginx/conf.d/default.conf:ro
-      - ./web/build:/var/www/frontend # maps frontend build inside nginx
     depends_on:
-      - django
+      - db
+    env_file:
+      - ./secrets/db.env
+    environment:
+      DEBUG: 1
+      DJANGO_SECRET_KEY: /var/run/secrets/django_secret
+      EMAIL_SERVICE_NAME: mailchimp
+      EMAIL_NEWSLETTER_LIST_ID: d574cb485f
+      DATABASE_HOST: db
 
+  db:
+    image: postgres
+    container_name: db
+    ports:
+      - '5432:5432'
+    env_file:
+      - ./secrets/db.env
+    volumes:
+      - ./data/postgres:/var/lib/postgresql/data
+      
+    
 
 secrets:
   django_secret:
