@@ -60,7 +60,7 @@ class MentorRegistrationView(HackathonMentorsMixin, CreateView):
     success_url = reverse_lazy('index')
 
     def dispatch(self, request, *args, **kwargs):
-        if request.user:
+        if Mentor.objects.filter(user=request.user).exists():
             messages.info(self.request, 'You are already registered as a mentor. Did you want to change your information?')
             return redirect(reverse('mentor_view', args=[request.user]))
 
