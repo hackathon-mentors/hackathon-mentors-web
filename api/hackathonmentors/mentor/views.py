@@ -11,6 +11,7 @@ from hackathonmentors.views import HackathonMentorsMixin
 from mentor.forms import MentorRegistrationForm
 from mentor.models import Mentor
 from user.models import CustomUser as User
+from user.skill.models import UserSkill
 
 
 class MentorListView(HackathonMentorsMixin, ListView):
@@ -35,6 +36,10 @@ class MentorDetailsView(HackathonMentorsMixin, DetailView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
+
+        user = self.get_object().user
+        context['skills'] = UserSkill.objects.filter(user=user)
+
         return context
 
     def get_object(self, queryset=None):

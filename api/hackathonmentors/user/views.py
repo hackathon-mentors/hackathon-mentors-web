@@ -8,6 +8,8 @@ from hackathonmentors.views import BaseView
 from user.forms import HMUserEditForm
 from user.models import CustomUser
 
+from user.skill.models import UserSkill
+
 
 class UserDashboardView(BaseView):
     template_name = "dashboard/home.html"
@@ -23,6 +25,11 @@ class UserEditView(LoginRequiredMixin, UpdateView):
 
     def get_object(self):
         return self.request.user
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['skills'] = UserSkill.objects.filter(user=self.request.user)
+        return context
 
 
 """
