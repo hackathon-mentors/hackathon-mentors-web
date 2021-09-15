@@ -28,7 +28,7 @@ class Migration(migrations.Migration):
             name='UserSkill',
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('competency', models.PositiveSmallIntegerField()),
+                ('proficiency', models.PositiveSmallIntegerField()),
                 ('skill', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='user.skill')),
                 ('user', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to=settings.AUTH_USER_MODEL)),
             ],
