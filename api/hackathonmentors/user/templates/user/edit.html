@@ -11,13 +11,20 @@
 
 <h1>{% trans "Edit Information" %}</h1>
 
-<form class="editinfo" id="editinfo_form" method="post" action="{% url 'user_edit' %}">
+<form class="editinfo mb-3" id="editinfo_form" method="post" action="{% url 'user_edit' %}">
   {% csrf_token %}
   {% crispy form %}
   {% if redirect_field_value %}
   <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
   {% endif %}
 </form>
+
+<section class="">
+  <h2>{% trans "My Skills" %}</h2>
+  {% for user_skill in skills %}
+    <span class="badge badge-primary badge-pill">{{ user_skill.skill.name }} ({{ user_skill.proficiency }})</span>
+  {% endfor %}
+</section>
 
 </div>
 
