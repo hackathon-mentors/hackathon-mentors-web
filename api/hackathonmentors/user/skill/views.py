@@ -1,25 +1,17 @@
 from django.core.serializers import serialize
 from django.http import HttpResponse
 from django.shortcuts import render
-from django.views.generic import ListView
+
+from rest_framework.generics import ListCreateAPIView
+from rest_framework import filters
 
 from user.skill.models import Skill
+from user.skill.serializers import SkillSerializer
 
 
-# Create your views here.
-class SkillView(ListView):
+class SkillListCreateAPIView(ListCreateAPIView):
     model = Skill
-
-    def get_queryset(self):
-        prefix = self.kwargs.get('prefix')
-
-        if prefix:
-            return Skill.objects.filter(name__startswith=prefix).order_by('name')
-
-        return Skill.objects.all()
-
-    def get(self, request, *args, **kwargs):
-        return HttpResponse(
-            serialize("json", self.get_queryset()),
-            content_type='application/json'
-        )
+    queryset = Skill.objects.all()
+    serializer_class = SkillSerializer
+    filter_backends = [filters.SearchFilter]
+    search_fields = ['name']
