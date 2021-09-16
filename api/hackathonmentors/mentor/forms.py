@@ -5,4 +5,4 @@ from mentor.models import Mentor
 class MentorRegistrationForm(ModelForm):
     class Meta:
         model = Mentor
-        fields = ['name', 'github', 'job_title']
+        fields = ['github', 'job_title']
