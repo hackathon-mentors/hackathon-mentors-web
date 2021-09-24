@@ -1,1 +1,1 @@
-web: gunicorn hackathonmentors/hackathonmentors.wsgi
+web: gunicorn --pythonpath hackathonmentors hackathonmentors.wsgi
