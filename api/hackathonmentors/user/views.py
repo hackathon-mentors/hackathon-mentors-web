@@ -10,9 +10,17 @@ from user.models import CustomUser
 
 from user.skill.models import UserSkill
 
+from mentor.models import Mentor
+
 
 class UserDashboardView(BaseView):
     template_name = "dashboard/home.html"
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['mentor_profile'] = Mentor.objects.filter(user=self.request.user)
+        context['skills'] = UserSkill.objects.filter(user=self.request.user)
+        return context
 
 
 class UserEditView(LoginRequiredMixin, UpdateView):
