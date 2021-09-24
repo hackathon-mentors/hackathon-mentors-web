@@ -4,19 +4,27 @@
 
 <section class="bg-light vh-100">
   <div class="container">
-    
-
-      
-      <div class="">
+    <section class="py-3">
+      <header class="d-flex justify-content-between">
         <h1 class="h1">
-          <b>@{{ user.username }}</b> {% if user.is_staff %}<span class="badge badge-pill badge-primary">Mentor</span>{% endif %}
+          <b>@{{ user.username }}</b> {% if mentor_profile %}<span class="badge badge-pill badge-primary">Mentor</span>{% endif %}
         </h1>
-        <p>First Name: {{ user.first_name }}</p>
-        <p>Last Name: {{ user.last_name }}</p>
-        <p>Joined: {{ user.date_joined|date }}</p>
-      </div>
-    <div class="d-flex flex-column flex-lg-row">
-    </div>
+        <div>
+          <a class="btn btn-primary" href="{% url 'user_edit' %}">Edit Info</a>
+        </div>
+      </header>
+      <p>First Name: {{ user.first_name }}</p>
+      <p>Last Name: {{ user.last_name }}</p>
+      <p>Joined: {{ user.date_joined|date }}</p>
+    </section>
+
+    <section class="">
+      <h2>Skills</h2>
+      {% for user_skill in skills %}
+        <span class="badge badge-primary badge-pill">{{ user_skill.skill.name }} ({{ user_skill.proficiency }})</span>
+      {% endfor %}
+    </section>
+    
   </div>
 </section>
 

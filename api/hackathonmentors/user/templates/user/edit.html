@@ -11,6 +11,7 @@
 
 <h1>{% trans "Edit Information" %}</h1>
 
+<h2>User Information</h2>
 <form class="editinfo mb-3" id="editinfo_form" method="post" action="{% url 'user_edit' %}">
   {% csrf_token %}
   {% crispy form %}
@@ -19,11 +20,28 @@
   {% endif %}
 </form>
 
+<hr>
+
 <section class="">
   <h2>{% trans "My Skills" %}</h2>
+  
+  <div class="h4">
   {% for user_skill in skills %}
-    <span class="badge badge-primary badge-pill">{{ user_skill.skill.name }} ({{ user_skill.proficiency }})</span>
+    <span class="badge badge-primary">{{ user_skill.skill.name }} ({{ user_skill.proficiency }}) <a data-user-skill-id="{{ user_skill.id }}" data-user-skill-name="{{ user_skill.skill.name }}" class="remove-skill text-light" href="#"><i class="fa fa-times"></i></a></span>
   {% endfor %}
+  </div>
+
+  <p></p>
+  <form method="post" action="{% url 'user_skills' %}">
+    {% csrf_token %}
+    <div class="form-row">
+      <div class="col-4 form-group">
+        <label for="newSkillInput">Add a skill</label>
+        <input id="newSkillInput" class="form-control" name="name">
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
 </section>
 
 </div>
