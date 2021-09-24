@@ -32,7 +32,7 @@
   </div>
 
   <p></p>
-  <form method="post" action="{% url 'user_skills' %}">
+  <form method="post" action="{% url 'user_skills' user.username %}">
     {% csrf_token %}
     <div class="form-row">
       <div class="col-4 form-group">
