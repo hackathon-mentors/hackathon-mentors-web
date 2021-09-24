@@ -2,11 +2,11 @@ version: '3.5'
 
 services:
   django:
-    container_name: api
-    build: ./api
+    container_name: web
+    build: .
     command: python hackathonmentors/manage.py runserver 0.0.0.0:8000
     volumes:
-      - ./api:/api
+      - .:/web
     ports:
       - "8000:8000"
     secrets:
