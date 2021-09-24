@@ -1,6 +1,8 @@
 from django.urls import path, re_path
 
 from . import views
+from user.skill import views as skill_views
+
 from importlib import import_module
 
 from django.urls import include, path
@@ -12,6 +14,8 @@ from django.conf import settings
 
 urlpatterns = [
     path("", views.UserDashboardView.as_view(), name="user_dashboard"),
+    path("<str:slug>/skills", skill_views.UserSkillListCreateAPIView.as_view(), name="user_skills"),
+    path("<str:slug>/skill/<int:pk>", skill_views.UserSkillRetrieveDestroyAPIView.as_view(), name="user_skill"),
 
     path("edit/", views.UserEditView.as_view(), name="user_edit"),
 
