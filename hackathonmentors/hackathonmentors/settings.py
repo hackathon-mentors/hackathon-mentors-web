@@ -142,7 +142,8 @@ SOCIALACCOUNT_ENABLED = True
 SOCIALACCOUNT_PROVIDERS = {
     'github': {
         'SCOPE': [
-            'user',
+            'read:user',
+            'user:email',
         ],
     },
     'linkedin': {
