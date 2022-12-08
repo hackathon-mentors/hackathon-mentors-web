@@ -2,6 +2,9 @@ from django.shortcuts import render
 from django.urls import reverse_lazy
 from django.views.generic.edit import CreateView
 from django.views.generic import ListView, DetailView
+from django import forms
+from datetime import datetime
+from hackathon.forms import HMHackathonCreateForm
 
 from rest_framework import viewsets
 from rest_framework import permissions
@@ -44,13 +47,7 @@ class HackathonDetailsView(HackathonMentorsMixin, DetailView):
 
 class HackathonCreateView(HackathonMentorsMixin, CreateView):
     model = Hackathon
-    fields = [
-        "name",
-        "location",
-        "is_remote",
-        "starts",
-        "ends",
-    ]
+    form_class = HMHackathonCreateForm
     template_name = "hackathon/add.html"
 
     def validate(self, form):

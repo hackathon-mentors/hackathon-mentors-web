@@ -9,6 +9,21 @@ from allauth.socialaccount import providers
 
 from django.conf import settings
 
+from django.shortcuts import redirect
+from django.contrib.auth import logout
+
+def UserLoggedIn(request):
+    if request.user.is_authenticated == True:
+        username = request.user.username
+    else:
+        username = None
+    return username
+
+def logout_view(request):
+    username = UserLoggedIn(request)
+    if username != None:
+        logout(request)
+        return redirect('/')
 
 urlpatterns = [
     path("", views.UserDashboardView.as_view(), name="user_dashboard"),
@@ -18,7 +33,7 @@ urlpatterns = [
     # allauth overrides
     path("signup/", views.HMSignupView.as_view(), name="account_signup"),
     path("login/", views.HMLoginView.as_view(), name="account_login"),
-    path("logout/", views.HMLogoutView.as_view(), name="account_logout"),
+    path("logout/", logout_view, name="account_logout"),
     path("password/change/", views.HMPasswordChangeView.as_view(),
          name="account_change_password"),
     path("password/set/", views.HMPasswordSetView.as_view(), name="account_set_password"),
@@ -42,7 +57,6 @@ urlpatterns = [
     path("password/reset/key/done/", views.HMPasswordResetFromKeyDoneView.as_view(),
          name="account_reset_password_from_key_done"),
 ]
-
 
 if settings.SOCIALACCOUNT_ENABLED:
     urlpatterns += [path('social/', include('allauth.socialaccount.urls'))]

@@ -1,6 +1,5 @@
 from django.db import models
 
-
 class Hackathon(models.Model):
     name = models.CharField(max_length=64)
     location = models.CharField(max_length=64)  # make sure NULL passed when is_remote

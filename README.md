@@ -39,11 +39,12 @@ Website for Hackathon Mentors
   POSTGRES_PASSWORD=hackathonmentors_pass
   ```
 
-3. Run `docker-compose up -d` to start building & spinning up the `web` and `db` images.
-  - Since we are running docker-compose v3, the db may come up before the web server.
-  - Check logs `docker-compose logs -f web` and see if it has connection errors.
-  - If so, simply do `docker-compose restart web`
-4. `docker-compose exec web bash` to go into the django (web) image:
+3. Run `docker-compose build` and `docker-compose up -d` to start building & spinning up the `api` and `db` images.
+  - Since we are running docker-compose v3, the db may come up before the api server.
+  - Check logs `docker-compose logs -f api` and see if it has connection errors.
+  - If so, simply do `docker-compose restart api`
+  - Note: If you encounter issue with the connection between the `api` and `db` images, you would need to `docker-compose down` and `docker-compose up -d`
+4. `docker exec -ti api /bin/bash` to go into the django (web) image:
   - `python hackathonmentors/manage.py migrate` to set up initial database
   - `python hackathonmentors/manage.py createsuperuser` to create an admin user for your localhost.
   - `python hackathonmentors/manage.py loaddata hackathonmentors/hackathon/fixtures/0001_initial.json` to load up sample hackathon data (from [HackathonScraper](https://github.com/hackathon-mentors/HackathonScraper)!)
