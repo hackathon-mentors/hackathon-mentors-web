@@ -7,13 +7,14 @@ class Mentor(models.Model):
     github = models.CharField(max_length=255)
     job_title = models.CharField(max_length=255)
 
-    user = models.ForeignKey('user.CustomUser', on_delete=models.SET(1))
+    user = models.ForeignKey("user.CustomUser", on_delete=models.SET(1))
     date_created = models.DateTimeField(auto_now_add=True)
     date_updated = models.DateTimeField(auto_now_add=True)
     is_active = models.BooleanField(default=False)
+    is_official = models.BooleanField(default=False)
 
     def __str__(self):
         return f"{self.name} (Github@{self.github}, {self.location})"
 
     class Meta:
-        db_table = 'mentors'
+        db_table = "mentors"

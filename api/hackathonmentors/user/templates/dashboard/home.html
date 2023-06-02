@@ -9,7 +9,7 @@
       
       <div class="">
         <h1 class="h1">
-          <b>@{{ user.username }}</b> {% if user.is_staff %}<span class="badge badge-pill badge-primary">Mentor</span>{% endif %}
+          <b>@{{ user.username }}</b> {% if user.is_staff %}<span class="badge badge-pill badge-primary">Staff</span>{% endif %}<a href="{% url 'user_edit' %}">&#9999;&#65039;</a>
         </h1>
         <p>First Name: {{ user.first_name }}</p>
         <p>Last Name: {{ user.last_name }}</p>

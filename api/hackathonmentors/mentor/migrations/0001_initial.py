@@ -5,7 +5,6 @@ from django.db import migrations, models
 
 
 class Migration(migrations.Migration):
-
     initial = True
 
     dependencies = [
@@ -14,21 +13,34 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.CreateModel(
-            name='Mentor',
+            name="Mentor",
             fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('name', models.CharField(max_length=255)),
-                ('location', models.CharField(max_length=255)),
-                ('github', models.CharField(max_length=255)),
-                ('job_title', models.CharField(max_length=255)),
-                ('skills', models.CharField(max_length=255)),
-                ('date_created', models.DateTimeField(auto_now_add=True)),
-                ('date_updated', models.DateTimeField(auto_now_add=True)),
-                ('is_active', models.BooleanField(default=False)),
-                ('user_id', models.ForeignKey(on_delete=models.SET(1), to=settings.AUTH_USER_MODEL)),
+                (
+                    "id",
+                    models.AutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("name", models.CharField(max_length=255)),
+                ("location", models.CharField(max_length=255)),
+                ("github", models.CharField(max_length=255)),
+                ("job_title", models.CharField(max_length=255)),
+                ("skills", models.CharField(max_length=255)),
+                ("date_created", models.DateTimeField(auto_now_add=True)),
+                ("date_updated", models.DateTimeField(auto_now_add=True)),
+                ("is_active", models.BooleanField(default=False)),
+                (
+                    "user_id",
+                    models.ForeignKey(
+                        on_delete=models.SET(1), to=settings.AUTH_USER_MODEL
+                    ),
+                ),
             ],
             options={
-                'db_table': 'mentors',
+                "db_table": "mentors",
             },
         ),
     ]
