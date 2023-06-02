@@ -28,7 +28,6 @@ class Migration(migrations.Migration):
                 ("location", models.CharField(max_length=255)),
                 ("github", models.CharField(max_length=255)),
                 ("job_title", models.CharField(max_length=255)),
-                ("skills", models.CharField(max_length=255)),
                 ("date_created", models.DateTimeField(auto_now_add=True)),
                 ("date_updated", models.DateTimeField(auto_now_add=True)),
                 ("is_active", models.BooleanField(default=False)),

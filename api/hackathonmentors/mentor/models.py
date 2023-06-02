@@ -1,4 +1,5 @@
 from django.db import models
+from user.skill.models import UserSkill
 
 
 class Mentor(models.Model):
@@ -11,6 +12,7 @@ class Mentor(models.Model):
     date_created = models.DateTimeField(auto_now_add=True)
     date_updated = models.DateTimeField(auto_now_add=True)
     is_active = models.BooleanField(default=False)
+    skills = models.ManyToManyField(UserSkill, verbose_name=("User skills"))
     is_official = models.BooleanField(default=False)
 
     def __str__(self):

@@ -4,15 +4,14 @@ from django.db import migrations, models
 
 
 class Migration(migrations.Migration):
-
     dependencies = [
-        ('mentor', '0003_remove_mentor_skills'),
+        ("mentor", "0002_rename_userid_user"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='mentor',
-            name='is_official',
+            model_name="mentor",
+            name="is_official",
             field=models.BooleanField(default=False),
         ),
     ]
