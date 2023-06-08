@@ -17,9 +17,9 @@ class UserEditView(LoginRequiredMixin, UpdateView):
     model = CustomUser
     form_class = HMUserEditForm
     template_name = "user/edit.html"
-    success_url = reverse_lazy('user_edit')
-    login_url = reverse_lazy('account_login')
-    redirect_field_name = 'next'
+    success_url = reverse_lazy("user_dashboard")
+    login_url = reverse_lazy("account_login")
+    redirect_field_name = "next"
 
     def get_object(self):
         return self.request.user
@@ -32,52 +32,52 @@ https://github.com/pennersr/django-allauth/blob/master/allauth/account/views.py
 
 
 class HMLoginView(allauth.LoginView):
-    template_name = 'user/login.html'
+    template_name = "user/login.html"
 
 
 class HMSignupView(allauth.SignupView):
-    template_name = 'user/signup.html'
+    template_name = "user/signup.html"
 
 
 class HMConfirmEmailView(allauth.ConfirmEmailView):
-    template_name = 'user/email_confirm.html'
+    template_name = "user/email_confirm.html"
 
 
 class HMEmailView(allauth.EmailView):
-    template_name = 'user/email.html'
+    template_name = "user/email.html"
 
 
 class HMPasswordChangeView(allauth.PasswordChangeView):
-    template_name = 'user/password_change.html'
+    template_name = "user/password_change.html"
 
 
 class HMPasswordSetView(allauth.PasswordSetView):
-    template_name = 'user/password_set.html'
+    template_name = "user/password_set.html"
 
 
 class HMPasswordResetView(allauth.PasswordResetView):
-    template_name = 'user/password_reset.html'
+    template_name = "user/password_reset.html"
 
 
 class HMPasswordResetDoneView(allauth.PasswordResetDoneView):
-    template_name = 'user/password_reset_done.html'
+    template_name = "user/password_reset_done.html"
 
 
 class HMPasswordResetFromKeyView(allauth.PasswordResetFromKeyView):
-    template_name = 'user/password_reset_from_key.html'
+    template_name = "user/password_reset_from_key.html"
 
 
 class HMPasswordResetFromKeyDoneView(allauth.PasswordResetFromKeyDoneView):
-    template_name = 'user/password_reset_from_key_done.html'
+    template_name = "user/password_reset_from_key_done.html"
 
 
 class HMLogoutView(allauth.LogoutView):
-    template_name = 'user/logout.html'
+    template_name = "user/logout.html"
 
 
 class HMAccountInactiveView(allauth.AccountInactiveView):
-    template_name = 'user/account_inactive.html'
+    template_name = "user/account_inactive.html"
 
 
 class HMEmailVerificationSentView(allauth.EmailVerificationSentView):
-    template_name = 'user/verification_sent.html'
+    template_name = "user/verification_sent.html"
