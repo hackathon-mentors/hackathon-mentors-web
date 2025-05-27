@@ -2,7 +2,7 @@ Django==3.2.25
 mysqlclient==2.0.3
 django-allauth==0.44.0
 django-crispy-forms==1.11.1
-gunicorn==22.0.0
+gunicorn==23.0.0
 python-slugify==4.0.1
 google-cloud-storage==1.36.0
 djangorestframework==3.15.2
