@@ -1,4 +1,4 @@
-Django==3.2.25
+Django==4.2.21
 mysqlclient==2.0.3
 django-allauth==0.44.0
 django-crispy-forms==1.11.1
